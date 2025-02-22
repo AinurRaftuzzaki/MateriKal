@@ -13,23 +13,27 @@ Banyak permasalahan nyata yang dapat dimodelkan menggunakan SPL, di antaranya:
    - Siswa A membeli 3 buku tulis dan 2 pulpen seharga Rp22.000,-.
    - Siswa B membeli 2 buku tulis dan 2 pulpen seharga Rp16.000,-.
    - Berapa harga satuan buku tulis dan pulpen?
+```
 
 2. **Masalah Perjalanan Pesawat**
    - Pesawat P1 menempuh perjalanan 1.500 km selama 2,5 jam dengan arah angin.
    - Pesawat P2 menempuh perjalanan yang sama selama 3 jam melawan arah angin.
    - Tentukan kecepatan pesawat dan kecepatan angin.
+```
 
 3. **Masalah Perpotongan Garis**
    - Diberikan dua persamaan garis: 
      \[ 3x + 2y = 10 \] 
      \[ 3x + 2y = 25 \]
    - Apakah kedua garis berpotongan? Jika ya, tentukan titik potongnya.
+```
 
 4. **Masalah Tiket Pameran**
    - Tiket anak-anak: Rp20.000,00
    - Tiket dewasa: Rp35.000,00
    - Terdapat 1.400 pengunjung dengan total pendapatan Rp43.000.000,00.
    - Tentukan jumlah pengunjung anak-anak dan dewasa.
+```
 
 5. **Masalah Bilangan Tiga Digit**
    - Bilangan tiga digit \(zyz\) dengan digit \(x, y, z\) memenuhi:
@@ -93,6 +97,3 @@ print("Solusi: Buku tulis =", X[0], ", Pulpen =", X[1])
 ```
 
 Kode ini menyelesaikan SPL dengan **numpy.linalg.solve()**, metode yang lebih sistematis dibanding substitusi atau eliminasi manual.
-
-```{tableofcontents}
-```
