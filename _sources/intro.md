@@ -60,9 +60,4 @@ Aljabar linier memiliki banyak aplikasi dalam berbagai bidang seperti:
 - **Optimasi**: Pemodelan linear programming
 - **Pemrosesan Citra**: Filter dan transformasi gambar
 
-## **5. Kesimpulan**
-- Aljabar linier adalah dasar penting dalam komputasi modern.
-- Python menyediakan pustaka seperti **NumPy** untuk melakukan perhitungan aljabar linier dengan efisien.
-- Konsep seperti SPL, matriks, dan vektor memiliki banyak aplikasi praktis dalam berbagai bidang.
-
 ---
