@@ -1,53 +1,56 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.11.5
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
+# Definisi Sistem Persamaan Linier
 
-# Notebooks with MyST Markdown
+## **1. Definisi Persamaan Linear**
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
+Persamaan linear dalam *n* variabel (*unknown*, *anu*) \(x_1, x_2, ..., x_n\) adalah persamaan yang memiliki bentuk umum:
 
-## An example cell
+\[
+a_1 x_1 + a_2 x_2 + ... + a_n x_n = b
+\]
 
-With MyST Markdown, you can define code cells with a directive like so:
+dengan \(a_1, a_2, ..., a_n, b\) merupakan bilangan real, dan tidak semua \(a_i\) untuk \(i = 1, 2, ..., n\) adalah nol.
 
-```{code-cell}
-print(2 + 2)
+- **Koefisien**: Setiap bilangan \(a_i\) disebut sebagai koefisien variabel \(x_i\).
+- **Suku Konstan**: Bilangan \(b\) disebut sebagai suku konstan.
+
+## **2. Contoh Sistem Persamaan Linear**
+Sistem persamaan linear terdiri dari beberapa persamaan linear yang melibatkan beberapa variabel. Berikut adalah contoh sistem persamaan linear dengan dua variabel:
+
+\[
+\begin{cases}
+2x + 3y = 8 \\
+5x - y = 3
+\end{cases}
+\]
+
+Pada contoh di atas:
+- \(a_1 = 2, a_2 = 3, b = 8\) untuk persamaan pertama.
+- \(a_1 = 5, a_2 = -1, b = 3\) untuk persamaan kedua.
+
+Sistem ini dapat diselesaikan dengan berbagai metode seperti **substitusi, eliminasi, matriks**, atau metode numerik lainnya.
+
+## **3. Implementasi dalam Python**
+Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan **NumPy**:
+
+```python
+import numpy as np
+
+# Matriks koefisien
+A = np.array([[2, 3], [5, -1]])
+# Vektor hasil
+B = np.array([8, 3])
+
+# Menyelesaikan sistem persamaan
+X = np.linalg.solve(A, B)
+print("Solusi: x =", X[0], ", y =", X[1])
 ```
 
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
+Kode di atas menggunakan `numpy.linalg.solve()` untuk menemukan solusi dari sistem persamaan linear secara langsung.
 
-```{seealso}
-Jupyter Book uses [Jupytext](https://jupytext.readthedocs.io/en/latest/) to convert text-based files to notebooks, and can support [many other text-based notebook files](https://jupyterbook.org/file-types/jupytext.html).
-```
+## **4. Kesimpulan**
+- **Persamaan linear** adalah persamaan yang memiliki variabel dengan pangkat satu.
+- **Sistem persamaan linear** terdiri dari beberapa persamaan linear dengan beberapa variabel.
+- **Metode penyelesaian** dapat menggunakan metode aljabar seperti substitusi dan eliminasi, atau metode berbasis matriks dengan pemrograman.
+- **Python (NumPy)** dapat digunakan untuk menyelesaikan SPL dengan efisien.
 
-## Create a notebook with MyST Markdown
-
-MyST Markdown notebooks are defined by two things:
-
-1. YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-   See the YAML at the top of this page for example.
-2. The presence of `{code-cell}` directives, which will be executed with your book.
-
-That's all that is needed to get started!
-
-## Quickly add YAML metadata for MyST Notebooks
-
-If you have a markdown file and you'd like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:
-
-```
-jupyter-book myst init path/to/markdownfile.md
-```
+Dokumentasi ini dapat digunakan sebagai referensi dasar untuk memahami sistem persamaan linear dan implementasinya dalam pemrograman.
