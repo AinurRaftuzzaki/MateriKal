@@ -2,16 +2,12 @@
 
 ## **1. Definisi Persamaan Linear**
 
-Persamaan linear dalam *n* variabel (*unknown*, *anu*) \(x_1, x_2, ..., x_n\) adalah persamaan yang memiliki bentuk umum:
+Persamaan ini disebut linear lantaran hubungan matematis ini dapat digambarkan sebagai garis lurus dalam sistem koordinat kartesius. Apabila terdapat lebih dari satu persamaan linear, persamaan tersebut akan menjadi sebuah sistem.
+Bentuk umum untuk persamaan linear adalah: 
 
-\[
-a_1 x_1 + a_2 x_2 + ... + a_n x_n = b
-\]
+y = mx + b 
 
-dengan \(a_1, a_2, ..., a_n, b\) merupakan bilangan real, dan tidak semua \(a_i\) untuk \(i = 1, 2, ..., n\) adalah nol.
-
-- **Koefisien**: Setiap bilangan \(a_i\) disebut sebagai koefisien variabel \(x_i\).
-- **Suku Konstan**: Bilangan \(b\) disebut sebagai suku konstan.
+Terdapat beberapa macam sistem persamaan linear, yaitu:
 
 ## **2. Contoh Sistem Persamaan Linear**
 Sistem persamaan linear terdiri dari beberapa persamaan linear yang melibatkan beberapa variabel. Berikut adalah contoh sistem persamaan linear dengan dua variabel:
