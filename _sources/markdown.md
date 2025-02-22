@@ -33,6 +33,7 @@ Untuk menyelesaikan persamaan ini, kita mencari nilai `x`:
 2x - 5 = 0
 2x = 5
 x = 5/
+```
 
 ## **3. Implementasi dalam Python**
 Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan **NumPy**:
