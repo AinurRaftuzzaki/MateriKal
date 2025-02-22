@@ -7,7 +7,7 @@ Bentuk umum untuk persamaan linear adalah:
 
 y = mx + b 
 
-## **2. Sistem Persamaan Linear Satu Variabel
+## **2. Sistem Persamaan Linear Satu Variabel**
 
 Dalam sistem persamaan ini hanya terdapat sebuah variabel saja berpangkat satu. Adapun bentuk umumnya, yakni: 
 
@@ -20,7 +20,7 @@ Di mana:
 - `x` adalah variabel
 - `a ≠ 0`
 
-## Contoh
+### Contoh
 Berikut adalah contoh persamaan linier satu variabel:
 
 ```
@@ -35,23 +35,22 @@ Untuk menyelesaikan persamaan ini, kita mencari nilai `x`:
 x = 5/
 ```
 
-## **3. Implementasi dalam Python**
-Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan **NumPy**:
+## **3. Persamaan Linear Dua Variabel Persamaan linear dua variabel adalah sistem persamaan dengan variabel berjumlah dua berpangkat satu. Bentuk umumnya: ax + by = c. A dan b adalah bilangan bulat bukan nol dengan c adalah konstanta.
 
-```python
-import numpy as np
+ax + by = c
 
-# Matriks koefisien
-A = np.array([[2, 3], [5, -1]])
-# Vektor hasil
-B = np.array([8, 3])
+Di mana:
+- `a`, `b`, dan `c` adalah konstanta
+- `x` dan `y` adalah variabel
+- `a ≠ 0` atau `b ≠ 0`
 
-# Menyelesaikan sistem persamaan
-X = np.linalg.solve(A, B)
-print("Solusi: x =", X[0], ", y =", X[1])
+### Contoh
+Berikut adalah contoh sistem persamaan linier dua variabel:
+
 ```
-
-Kode di atas menggunakan `numpy.linalg.solve()` untuk menemukan solusi dari sistem persamaan linear secara langsung.
+2x + 3y = 6
+4x - y = 5
+```
 
 ## **4. Kesimpulan**
 - **Persamaan linear** adalah persamaan yang memiliki variabel dengan pangkat satu.

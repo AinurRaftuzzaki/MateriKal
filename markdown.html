@@ -379,9 +379,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel">**2. Sistem Persamaan Linear Satu Variabel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel"><strong>2. Sistem Persamaan Linear Satu Variabel</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-dua-variabel-persamaan-linear-dua-variabel-adalah-sistem-persamaan-dengan-variabel-berjumlah-dua-berpangkat-satu-bentuk-umumnya-ax-by-c-a-dan-b-adalah-bilangan-bulat-bukan-nol-dengan-c-adalah-konstanta">**3. Persamaan Linear Dua Variabel Persamaan linear dua variabel adalah sistem persamaan dengan variabel berjumlah dua berpangkat satu. Bentuk umumnya: ax + by = c. A dan b adalah bilangan bulat bukan nol dengan c adalah konstanta.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
 </ul>
             </nav>
@@ -403,7 +408,7 @@ Bentuk umum untuk persamaan linear adalah:</p>
 <p>y = mx + b</p>
 </section>
 <section id="sistem-persamaan-linear-satu-variabel">
-<h2>**2. Sistem Persamaan Linear Satu Variabel<a class="headerlink" href="#sistem-persamaan-linear-satu-variabel" title="Link to this heading">#</a></h2>
+<h2><strong>2. Sistem Persamaan Linear Satu Variabel</strong><a class="headerlink" href="#sistem-persamaan-linear-satu-variabel" title="Link to this heading">#</a></h2>
 <p>Dalam sistem persamaan ini hanya terdapat sebuah variabel saja berpangkat satu. Adapun bentuk umumnya, yakni:</p>
 <p>ax + b = 0.</p>
 <p>a dan b adalah bilangan bulat bukan nol dan b konstanta.</p>
@@ -413,9 +418,8 @@ Bentuk umum untuk persamaan linear adalah:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> adalah variabel</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">≠</span> <span class="pre">0</span></code></p></li>
 </ul>
-</section>
 <section id="contoh">
-<h2>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h2>
+<h3>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
 <p>Berikut adalah contoh persamaan linier satu variabel:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
@@ -427,22 +431,24 @@ Bentuk umum untuk persamaan linear adalah:</p>
 </pre></div>
 </div>
 </section>
-<section id="implementasi-dalam-python">
-<h2><strong>3. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
-<p>Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan <strong>NumPy</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Matriks koefisien</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
-<span class="c1"># Vektor hasil</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-
-<span class="c1"># Menyelesaikan sistem persamaan</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi: x =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, y =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</section>
+<section id="persamaan-linear-dua-variabel-persamaan-linear-dua-variabel-adalah-sistem-persamaan-dengan-variabel-berjumlah-dua-berpangkat-satu-bentuk-umumnya-ax-by-c-a-dan-b-adalah-bilangan-bulat-bukan-nol-dengan-c-adalah-konstanta">
+<h2>**3. Persamaan Linear Dua Variabel Persamaan linear dua variabel adalah sistem persamaan dengan variabel berjumlah dua berpangkat satu. Bentuk umumnya: ax + by = c. A dan b adalah bilangan bulat bukan nol dengan c adalah konstanta.<a class="headerlink" href="#persamaan-linear-dua-variabel-persamaan-linear-dua-variabel-adalah-sistem-persamaan-dengan-variabel-berjumlah-dua-berpangkat-satu-bentuk-umumnya-ax-by-c-a-dan-b-adalah-bilangan-bulat-bukan-nol-dengan-c-adalah-konstanta" title="Link to this heading">#</a></h2>
+<p>ax + by = c</p>
+<p>Di mana:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, dan <code class="docutils literal notranslate"><span class="pre">c</span></code> adalah konstanta</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> dan <code class="docutils literal notranslate"><span class="pre">y</span></code> adalah variabel</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">≠</span> <span class="pre">0</span></code> atau <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">≠</span> <span class="pre">0</span></code></p></li>
+</ul>
+<section id="id1">
+<h3>Contoh<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Berikut adalah contoh sistem persamaan linier dua variabel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span><span class="n">y</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="mi">4</span><span class="n">x</span> <span class="o">-</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
 </pre></div>
 </div>
-<p>Kode di atas menggunakan <code class="docutils literal notranslate"><span class="pre">numpy.linalg.solve()</span></code> untuk menemukan solusi dari sistem persamaan linear secara langsung.</p>
+</section>
 </section>
 <section id="kesimpulan">
 <h2><strong>4. Kesimpulan</strong><a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
@@ -521,9 +527,14 @@ Bentuk umum untuk persamaan linear adalah:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel">**2. Sistem Persamaan Linear Satu Variabel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel"><strong>2. Sistem Persamaan Linear Satu Variabel</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-dua-variabel-persamaan-linear-dua-variabel-adalah-sistem-persamaan-dengan-variabel-berjumlah-dua-berpangkat-satu-bentuk-umumnya-ax-by-c-a-dan-b-adalah-bilangan-bulat-bukan-nol-dengan-c-adalah-konstanta">**3. Persamaan Linear Dua Variabel Persamaan linear dua variabel adalah sistem persamaan dengan variabel berjumlah dua berpangkat satu. Bentuk umumnya: ax + by = c. A dan b adalah bilangan bulat bukan nol dengan c adalah konstanta.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
 </ul>
   </nav></div>
