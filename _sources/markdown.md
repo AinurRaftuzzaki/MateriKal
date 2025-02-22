@@ -32,10 +32,12 @@ Untuk menyelesaikan persamaan ini, kita mencari nilai `x`:
 ```
 2x - 5 = 0
 2x = 5
-x = 5/
+x = 5
 ```
 
-## **3. Persamaan Linear Dua Variabel Persamaan linear dua variabel adalah sistem persamaan dengan variabel berjumlah dua berpangkat satu. Bentuk umumnya: ax + by = c. A dan b adalah bilangan bulat bukan nol dengan c adalah konstanta.
+## **3. Persamaan Linear Dua Variabel**
+
+Persamaan linear dua variabel adalah sistem persamaan dengan variabel berjumlah dua berpangkat satu. Bentuk umumnya: ax + by = c. A dan b adalah bilangan bulat bukan nol dengan c adalah konstanta.
 
 ax + by = c
 
@@ -52,10 +54,22 @@ Berikut adalah contoh sistem persamaan linier dua variabel:
 4x - y = 5
 ```
 
-## **4. Kesimpulan**
-- **Persamaan linear** adalah persamaan yang memiliki variabel dengan pangkat satu.
-- **Sistem persamaan linear** terdiri dari beberapa persamaan linear dengan beberapa variabel.
-- **Metode penyelesaian** dapat menggunakan metode aljabar seperti substitusi dan eliminasi, atau metode berbasis matriks dengan pemrograman.
-- **Python (NumPy)** dapat digunakan untuk menyelesaikan SPL dengan efisien.
+## **4. Persamaan Linear Tiga Variabel**
 
-Dokumentasi ini dapat digunakan sebagai referensi dasar untuk memahami sistem persamaan linear dan implementasinya dalam pemrograman.
+Variabel dalam sistem persamaan ini berjumlah tiga berpangkat satu. Bentuk umumnya sebagai berikut: 
+
+ax + by + cz = d. 
+
+Di mana:
+- `a`, `b`, `c`, dan `d` adalah konstanta
+- `x`, `y`, dan `z` adalah variabel
+- `a ≠ 0`, `b ≠ 0`, atau `c ≠ 0`
+
+### Contoh
+Berikut adalah contoh sistem persamaan linier tiga variabel:
+
+```
+2x + y - z = 3
+x - 2y + 3z = -3
+3x + y + 2z = 7
+```
