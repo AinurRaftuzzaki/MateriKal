@@ -1,10 +1,11 @@
-# Markdown Files
+# Definisi Sistem Persamaan Linier
+Pada subbab ini akan dibahas definisi sistem persamaan linear beserta contoh sistem persamaan linear. Sebelum dibahas tentang sistem persamaan linear, lebih dulu akan diberikan definisi persamaan linear.
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
+Yang dimaksud dengan persamaan linear dalam n variabel (unknown, anu) x_{1}, x_{2} ,...,x n adalah persamaan dengan bentuk umum
 
+a_{1}*x_{1} + a_{2}*x_{2} +...+a n x n =b
+
+dengan a_{1}, a_{2} ,...,a n , b menyatakan bilangan-bilangan real dan tidak semua a, i = 1, 2 ,...,n adalah nol. Untuk semua i = 1, 2 ,...,n, bilangan a_{i} disebut sebagai koefisien variabel x_{i} dan b disebut sebagai suku konstan.
 ## What is MyST?
 
 MyST stands for "Markedly Structured Text". It
