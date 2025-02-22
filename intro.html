@@ -358,7 +358,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -374,6 +376,23 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Persamaan Linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-spl"><strong>Sistem Persamaan Linear (SPL)</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-sistem-persamaan-linear-spl"><strong>1. Konsep Sistem Persamaan Linear (SPL)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-spl-dalam-kehidupan-sehari-hari"><strong>2. Aplikasi SPL dalam Kehidupan Sehari-hari</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-matematika-dan-penyelesaian-spl"><strong>3. Model Matematika dan Penyelesaian SPL</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-spl"><strong>4. Metode Penyelesaian SPL</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>5. Implementasi dalam Python</strong></a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -385,11 +404,123 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
 <h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linear-spl">
+<h1><strong>Sistem Persamaan Linear (SPL)</strong><a class="headerlink" href="#sistem-persamaan-linear-spl" title="Link to this heading">#</a></h1>
+<section id="konsep-sistem-persamaan-linear-spl">
+<h2><strong>1. Konsep Sistem Persamaan Linear (SPL)</strong><a class="headerlink" href="#konsep-sistem-persamaan-linear-spl" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan linear (SPL) mencakup definisi, jenis-jenis SPL, dan metode penyelesaiannya.</p>
+<p><strong>Video terkait materi ini dapat diakses dengan cara memindai kode di bawah ini.</strong></p>
+</section>
+<section id="aplikasi-spl-dalam-kehidupan-sehari-hari">
+<h2><strong>2. Aplikasi SPL dalam Kehidupan Sehari-hari</strong><a class="headerlink" href="#aplikasi-spl-dalam-kehidupan-sehari-hari" title="Link to this heading">#</a></h2>
+<p>Banyak permasalahan nyata yang dapat dimodelkan menggunakan SPL, di antaranya:</p>
+<ol class="arabic simple">
+<li><p><strong>Masalah Harga Barang di Koperasi</strong></p>
+<ul class="simple">
+<li><p>Siswa A membeli 3 buku tulis dan 2 pulpen seharga Rp22.000,-.</p></li>
+<li><p>Siswa B membeli 2 buku tulis dan 2 pulpen seharga Rp16.000,-.</p></li>
+<li><p>Berapa harga satuan buku tulis dan pulpen?</p></li>
+</ul>
+</li>
+<li><p><strong>Masalah Perjalanan Pesawat</strong></p>
+<ul class="simple">
+<li><p>Pesawat P1 menempuh perjalanan 1.500 km selama 2,5 jam dengan arah angin.</p></li>
+<li><p>Pesawat P2 menempuh perjalanan yang sama selama 3 jam melawan arah angin.</p></li>
+<li><p>Tentukan kecepatan pesawat dan kecepatan angin.</p></li>
+</ul>
+</li>
+<li><p><strong>Masalah Perpotongan Garis</strong></p>
+<ul class="simple">
+<li><p>Diberikan dua persamaan garis:
+[ 3x + 2y = 10 ]
+[ 3x + 2y = 25 ]</p></li>
+<li><p>Apakah kedua garis berpotongan? Jika ya, tentukan titik potongnya.</p></li>
+</ul>
+</li>
+<li><p><strong>Masalah Tiket Pameran</strong></p>
+<ul class="simple">
+<li><p>Tiket anak-anak: Rp20.000,00</p></li>
+<li><p>Tiket dewasa: Rp35.000,00</p></li>
+<li><p>Terdapat 1.400 pengunjung dengan total pendapatan Rp43.000.000,00.</p></li>
+<li><p>Tentukan jumlah pengunjung anak-anak dan dewasa.</p></li>
+</ul>
+</li>
+<li><p><strong>Masalah Bilangan Tiga Digit</strong></p>
+<ul class="simple">
+<li><p>Bilangan tiga digit (zyz) dengan digit (x, y, z) memenuhi:
+[ x + y + z = 10 ]</p></li>
+<li><p>Jika urutan digit dibalik, nilainya berkurang 99.</p></li>
+<li><p>Tentukan semua kemungkinan bilangan tersebut.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="model-matematika-dan-penyelesaian-spl">
+<h2><strong>3. Model Matematika dan Penyelesaian SPL</strong><a class="headerlink" href="#model-matematika-dan-penyelesaian-spl" title="Link to this heading">#</a></h2>
+<p>Setiap permasalahan di atas dapat diterjemahkan ke dalam model matematika dengan sistem persamaan linear. Contoh:</p>
+<ul class="simple">
+<li><p><strong>Masalah Kecepatan Pesawat</strong></p>
+<ul>
+<li><p>Misalkan:</p>
+<ul>
+<li><p>( v_P ) = kecepatan pesawat</p></li>
+<li><p>( v_A ) = kecepatan angin</p></li>
+</ul>
+</li>
+<li><p>Dari formula “jarak = kecepatan × waktu”:
+[
+(v_P + v_A) × 2.5 = 1500
+]
+[
+(v_P - v_A) × 3 = 1500
+]</p></li>
+<li><p>Disederhanakan:
+[
+v_P + v_A = 600
+]
+[
+v_P - v_A = 500
+]</p></li>
+<li><p>Dengan eliminasi:
+[
+2v_P = 1100 \Rightarrow v_P = 550
+]
+[
+v_A = 50
+]</p></li>
+<li><p>Hasil: Kecepatan pesawat = <strong>550 km/jam</strong>, kecepatan angin = <strong>50 km/jam</strong>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="metode-penyelesaian-spl">
+<h2><strong>4. Metode Penyelesaian SPL</strong><a class="headerlink" href="#metode-penyelesaian-spl" title="Link to this heading">#</a></h2>
+<p>Terdapat beberapa metode penyelesaian SPL:</p>
+<ul class="simple">
+<li><p><strong>Metode Substitusi</strong></p></li>
+<li><p><strong>Metode Eliminasi</strong></p></li>
+<li><p><strong>Metode Matriks (Invers &amp; Determinan)</strong></p></li>
+<li><p><strong>Metode Numerik (Jacobi &amp; Gauss-Seidel)</strong></p></li>
+</ul>
+<p>Untuk sistem dengan lebih banyak variabel dan persamaan, metode numerik lebih efektif karena kompleksitas perhitungan manual yang tinggi.</p>
+</section>
+<section id="implementasi-dalam-python">
+<h2><strong>5. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
+<p>Berikut contoh penyelesaian SPL menggunakan <strong>NumPy</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks koefisien</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
+<span class="c1"># Vektor hasil</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">22</span><span class="p">,</span> <span class="mi">16</span><span class="p">])</span>
+
+<span class="c1"># Menyelesaikan sistem persamaan</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi: Buku tulis =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, Pulpen =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Kode ini menyelesaikan SPL dengan <strong>numpy.linalg.solve()</strong>, metode yang lebih sistematis dibanding substitusi atau eliminasi manual.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Definisi Sistem Persamaan Linier</a></li>
@@ -397,6 +528,7 @@ It does not go in-depth into any particular topic - check out <a class="referenc
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -444,6 +576,30 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Persamaan Linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-spl"><strong>Sistem Persamaan Linear (SPL)</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-sistem-persamaan-linear-spl"><strong>1. Konsep Sistem Persamaan Linear (SPL)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-spl-dalam-kehidupan-sehari-hari"><strong>2. Aplikasi SPL dalam Kehidupan Sehari-hari</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-matematika-dan-penyelesaian-spl"><strong>3. Model Matematika dan Penyelesaian SPL</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-spl"><strong>4. Metode Penyelesaian SPL</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>5. Implementasi dalam Python</strong></a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
