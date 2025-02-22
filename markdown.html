@@ -379,8 +379,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan-linear"><strong>2. Contoh Sistem Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel">**2. Sistem Persamaan Linear Satu Variabel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
 </ul>
             </nav>
@@ -400,37 +400,44 @@ document.write(`
 <p>Persamaan ini disebut linear lantaran hubungan matematis ini dapat digambarkan sebagai garis lurus dalam sistem koordinat kartesius. Apabila terdapat lebih dari satu persamaan linear, persamaan tersebut akan menjadi sebuah sistem.
 Bentuk umum untuk persamaan linear adalah:</p>
 <p>y = mx + b</p>
-<p>Terdapat beberapa macam sistem persamaan linear, yaitu:</p>
 </section>
-<section id="contoh-sistem-persamaan-linear">
-<h2><strong>2. Contoh Sistem Persamaan Linear</strong><a class="headerlink" href="#contoh-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan linear terdiri dari beberapa persamaan linear yang melibatkan beberapa variabel. Berikut adalah contoh sistem persamaan linear dengan dua variabel:</p>
-<p>[
-\begin{cases}
-2x + 3y = 8 \
-5x - y = 3
-\end{cases}
-]</p>
-<p>Pada contoh di atas:</p>
+<section id="sistem-persamaan-linear-satu-variabel">
+<h2>**2. Sistem Persamaan Linear Satu Variabel<a class="headerlink" href="#sistem-persamaan-linear-satu-variabel" title="Link to this heading">#</a></h2>
+<p>Dalam sistem persamaan ini hanya terdapat sebuah variabel saja berpangkat satu. Adapun bentuk umumnya, yakni:</p>
+<p>ax + b = 0.</p>
+<p>a dan b adalah bilangan bulat bukan nol dan b konstanta.</p>
+<p>Di mana:</p>
 <ul class="simple">
-<li><p>(a_1 = 2, a_2 = 3, b = 8) untuk persamaan pertama.</p></li>
-<li><p>(a_1 = 5, a_2 = -1, b = 3) untuk persamaan kedua.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span></code> dan <code class="docutils literal notranslate"><span class="pre">b</span></code> adalah konstanta</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> adalah variabel</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">≠</span> <span class="pre">0</span></code></p></li>
 </ul>
-<p>Sistem ini dapat diselesaikan dengan berbagai metode seperti <strong>substitusi, eliminasi, matriks</strong>, atau metode numerik lainnya.</p>
 </section>
-<section id="implementasi-dalam-python">
-<h2><strong>3. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
-<p>Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan <strong>NumPy</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<section id="contoh">
+<h2>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h2>
+<p>Berikut adalah contoh persamaan linier satu variabel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Untuk menyelesaikan persamaan ini, kita mencari nilai <code class="docutils literal notranslate"><span class="pre">x</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>2x - 5 = 0
+2x = 5
+x = 5/
 
-<span class="c1"># Matriks koefisien</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
-<span class="c1"># Vektor hasil</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+## **3. Implementasi dalam Python**
+Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan **NumPy**:
 
-<span class="c1"># Menyelesaikan sistem persamaan</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi: x =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, y =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+```python
+import numpy as np
+
+# Matriks koefisien
+A = np.array([[2, 3], [5, -1]])
+# Vektor hasil
+B = np.array([8, 3])
+
+# Menyelesaikan sistem persamaan
+X = np.linalg.solve(A, B)
+print(&quot;Solusi: x =&quot;, X[0], &quot;, y =&quot;, X[1])
 </pre></div>
 </div>
 <p>Kode di atas menggunakan <code class="docutils literal notranslate"><span class="pre">numpy.linalg.solve()</span></code> untuk menemukan solusi dari sistem persamaan linear secara langsung.</p>
@@ -512,8 +519,8 @@ Bentuk umum untuk persamaan linear adalah:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan-linear"><strong>2. Contoh Sistem Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel">**2. Sistem Persamaan Linear Satu Variabel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
 </ul>
   </nav></div>

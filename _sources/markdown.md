@@ -7,23 +7,32 @@ Bentuk umum untuk persamaan linear adalah:
 
 y = mx + b 
 
-Terdapat beberapa macam sistem persamaan linear, yaitu:
+## **2. Sistem Persamaan Linear Satu Variabel
 
-## **2. Contoh Sistem Persamaan Linear**
-Sistem persamaan linear terdiri dari beberapa persamaan linear yang melibatkan beberapa variabel. Berikut adalah contoh sistem persamaan linear dengan dua variabel:
+Dalam sistem persamaan ini hanya terdapat sebuah variabel saja berpangkat satu. Adapun bentuk umumnya, yakni: 
 
-\[
-\begin{cases}
-2x + 3y = 8 \\
-5x - y = 3
-\end{cases}
-\]
+ax + b = 0.
 
-Pada contoh di atas:
-- \(a_1 = 2, a_2 = 3, b = 8\) untuk persamaan pertama.
-- \(a_1 = 5, a_2 = -1, b = 3\) untuk persamaan kedua.
+a dan b adalah bilangan bulat bukan nol dan b konstanta.
 
-Sistem ini dapat diselesaikan dengan berbagai metode seperti **substitusi, eliminasi, matriks**, atau metode numerik lainnya.
+Di mana:
+- `a` dan `b` adalah konstanta
+- `x` adalah variabel
+- `a ≠ 0`
+
+## Contoh
+Berikut adalah contoh persamaan linier satu variabel:
+
+```
+2x - 5 = 0
+```
+
+Untuk menyelesaikan persamaan ini, kita mencari nilai `x`:
+
+```
+2x - 5 = 0
+2x = 5
+x = 5/
 
 ## **3. Implementasi dalam Python**
 Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan **NumPy**:
