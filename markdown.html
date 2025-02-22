@@ -181,6 +181,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Definisi Sistem Persamaan Linier</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
@@ -378,11 +379,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Definisi Sistem Persamaan Linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear"><strong>Sistem Persamaan Linear</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan-linear"><strong>2. Contoh Sistem Persamaan Linear</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -395,10 +405,68 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="definisi-sistem-persamaan-linier">
 <h1>Definisi Sistem Persamaan Linier<a class="headerlink" href="#definisi-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
-<p>Pada subbab ini akan dibahas definisi sistem persamaan linear beserta contoh sistem persamaan linear. Sebelum dibahas tentang sistem persamaan linear, lebih dulu akan diberikan definisi persamaan linear.</p>
-<p>Yang dimaksud dengan persamaan linear dalam n variabel (unknown, anu) x_{1}, x_{2} ,…,x n adalah persamaan dengan bentuk umum</p>
-<p>a_{1}*x_{1} + a_{2}*x_{2} +…+a n x n =b</p>
-<p>dengan a_{1}, a_{2} ,…,a n , b menyatakan bilangan-bilangan real dan tidak semua a, i = 1, 2 ,…,n adalah nol. Untuk semua i = 1, 2 ,…,n, bilangan a_{i} disebut sebagai koefisien variabel x_{i} dan b disebut sebagai suku konstan.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linear">
+<h1><strong>Sistem Persamaan Linear</strong><a class="headerlink" href="#sistem-persamaan-linear" title="Link to this heading">#</a></h1>
+<section id="definisi-persamaan-linear">
+<h2><strong>1. Definisi Persamaan Linear</strong><a class="headerlink" href="#definisi-persamaan-linear" title="Link to this heading">#</a></h2>
+<p><strong>Definisi 2.2.1:</strong>
+Persamaan linear dalam <em>n</em> variabel (<em>unknown</em>, <em>anu</em>) (x_1, x_2, …, x_n) adalah persamaan yang memiliki bentuk umum:</p>
+<p>[
+a_1 x_1 + a_2 x_2 + … + a_n x_n = b
+]</p>
+<p>dengan (a_1, a_2, …, a_n, b) merupakan bilangan real, dan tidak semua (a_i) untuk (i = 1, 2, …, n) adalah nol.</p>
+<ul class="simple">
+<li><p><strong>Koefisien</strong>: Setiap bilangan (a_i) disebut sebagai koefisien variabel (x_i).</p></li>
+<li><p><strong>Suku Konstan</strong>: Bilangan (b) disebut sebagai suku konstan.</p></li>
+</ul>
+</section>
+<section id="contoh-sistem-persamaan-linear">
+<h2><strong>2. Contoh Sistem Persamaan Linear</strong><a class="headerlink" href="#contoh-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan linear terdiri dari beberapa persamaan linear yang melibatkan beberapa variabel. Berikut adalah contoh sistem persamaan linear dengan dua variabel:</p>
+<p>[
+\begin{cases}
+2x + 3y = 8 \
+5x - y = 3
+\end{cases}
+]</p>
+<p>Pada contoh di atas:</p>
+<ul class="simple">
+<li><p>(a_1 = 2, a_2 = 3, b = 8) untuk persamaan pertama.</p></li>
+<li><p>(a_1 = 5, a_2 = -1, b = 3) untuk persamaan kedua.</p></li>
+</ul>
+<p>Sistem ini dapat diselesaikan dengan berbagai metode seperti <strong>substitusi, eliminasi, matriks</strong>, atau metode numerik lainnya.</p>
+</section>
+<section id="implementasi-dalam-python">
+<h2><strong>3. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
+<p>Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan <strong>NumPy</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks koefisien</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="c1"># Vektor hasil</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Menyelesaikan sistem persamaan</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi: x =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, y =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Kode di atas menggunakan <code class="docutils literal notranslate"><span class="pre">numpy.linalg.solve()</span></code> untuk menemukan solusi dari sistem persamaan linear secara langsung.</p>
+</section>
+<section id="kesimpulan">
+<h2><strong>4. Kesimpulan</strong><a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Persamaan linear</strong> adalah persamaan yang memiliki variabel dengan pangkat satu.</p></li>
+<li><p><strong>Sistem persamaan linear</strong> terdiri dari beberapa persamaan linear dengan beberapa variabel.</p></li>
+<li><p><strong>Metode penyelesaian</strong> dapat menggunakan metode aljabar seperti substitusi dan eliminasi, atau metode berbasis matriks dengan pemrograman.</p></li>
+<li><p><strong>Python (NumPy)</strong> dapat digunakan untuk menyelesaikan SPL dengan efisien.</p></li>
+</ul>
+<p>Dokumentasi ini dapat digunakan sebagai referensi dasar untuk memahami sistem persamaan linear dan implementasinya dalam pemrograman.</p>
+<hr class="docutils" />
+<p><strong>Catatan:</strong>
+File ini ditulis dalam format Markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>) dan cocok untuk diunggah ke GitHub sebagai dokumentasi atau README proyek terkait sistem persamaan linear.</p>
+</section>
 <section id="what-is-myst">
 <h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Link to this heading">#</a></h2>
 <p>MyST stands for “Markedly Structured Text”. It
@@ -513,11 +581,20 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Definisi Sistem Persamaan Linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear"><strong>Sistem Persamaan Linear</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan-linear"><strong>2. Contoh Sistem Persamaan Linear</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
