@@ -1,6 +1,6 @@
-# Solusi
-Sistem persamaan linier dapat memiliki **satu solusi**, **tidak ada solusi**, atau **banyak solusi**, tergantung pada hubungan antara garis-garis dalam sistem tersebut.
+# **Solusi**
 
+Persamaan linier dalam dua variabel dapat memiliki satu solusi, tidak ada solusi, atau banyak solusi, tergantung pada bagaimana garis-garis yang diwakili oleh persamaan tersebut berinteraksi satu sama lain di dalam bidang koordinat. Jika dua garis berpotongan di satu titik, maka sistem memiliki satu solusi unik, yang berarti ada satu nilai pasangan \((x, y)\) yang memenuhi kedua persamaan. Namun, jika kedua garis sejajar dan tidak pernah berpotongan, maka sistem tidak memiliki solusi karena tidak ada titik yang memenuhi kedua persamaan secara bersamaan. Sementara itu, jika kedua persamaan sebenarnya merepresentasikan garis yang sama, maka ada tak hingga banyak solusi, karena setiap titik pada garis tersebut memenuhi kedua persamaan. Oleh karena itu, jumlah solusi dari sistem persamaan linier bergantung pada kemiringan dan posisi relatif garis-garis yang diwakilinya.
 **M₁ ≠ M₂**, yang berarti garis-garis tersebut berpotongan pada satu titik. Kasus ini menghasilkan tepat satu solusi - titik perpotongan.
 
 **M₁ = M₂** dan **B₁ ≠ B₂**, artinya keduanya sejajar tetapi tidak saling tumpang tindih. Kasus ini tidak menghasilkan solusi.
@@ -8,9 +8,9 @@ Sistem persamaan linier dapat memiliki **satu solusi**, **tidak ada solusi**, at
 **M₁ = M₂** dan **B₁ = B₂**, yang berarti kedua garis tersebut saling tumpang tindih. Karena keduanya saling tumpang tindih di setiap titik pada garis, maka setiap titik pada garis tersebut merupakan solusi, dan jumlahnya tak terhingga!
 
 ## 1. Satu Solusi (Sistem Konsisten dan Independen)
-- Terjadi ketika dua garis **berpotongan di satu titik**.
-- Gradien (kemiringan) kedua garis **berbeda**, sehingga mereka tidak sejajar.
-- Contoh:
+
+Sistem persamaan linear memiliki satu solusi ketika satu set nilai yang memenuhi semua persamaan dalam sistem. Ini terjadi ketika tidak ada variabel yang saling bergantung satu sama lain dan jumlah persamaannya sama dengan jumlah variabelnya, Terjadi ketika dua garis **berpotongan di satu titik** dan Gradien (kemiringan) kedua garis **berbeda**, sehingga mereka tidak sejajar.
+Contoh:
   ```math
   2x + 3y = 6
   x - y = 2
@@ -29,9 +29,10 @@ Contoh:
 - Grafiknya menunjukkan dua garis sejajar yang tidak memiliki titik perpotongan.
 
 ## 3. Banyak Solusi (Sistem Konsisten dan Bergantung)
-- Terjadi ketika dua persamaan mewakili **garis yang sama**.
-- Satu persamaan merupakan **kelipatan** dari yang lain.
-- Contoh:
+
+Suatu persamaan dapat memiliki solusi tak terhingga banyaknya jika persamaan tersebut memenuhi beberapa kondisi. Sistem persamaan memiliki solusi tak terhingga banyaknya jika garis-garisnya berimpit, dan keduanya memiliki titik potong sumbu-y yang sama . Jika kedua garis tersebut memiliki titik potong sumbu-y dan kemiringan yang sama, maka keduanya sebenarnya berada pada garis yang sama persis.
+
+Contoh:
   ```math
   2x + 3y = 6
   4x + 6y = 12  \quad (\text{dibagi 2 menjadi } 2x + 3y = 6)

@@ -179,9 +179,9 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Definisi Sistem Persamaan Linier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html"><strong>Definisi Sistem Persamaan Linier</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html"><strong>Sistem Persamaan Linear (SPL)</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solusi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Solusi</strong></a></li>
 </ul>
 
     </div>
@@ -392,22 +392,20 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="solusi">
-<h1>Solusi<a class="headerlink" href="#solusi" title="Link to this heading">#</a></h1>
-<p>Sistem persamaan linier dapat memiliki <strong>satu solusi</strong>, <strong>tidak ada solusi</strong>, atau <strong>banyak solusi</strong>, tergantung pada hubungan antara garis-garis dalam sistem tersebut.</p>
-<p><strong>M₁ ≠ M₂</strong>, yang berarti garis-garis tersebut berpotongan pada satu titik. Kasus ini menghasilkan tepat satu solusi - titik perpotongan.</p>
+<h1><strong>Solusi</strong><a class="headerlink" href="#solusi" title="Link to this heading">#</a></h1>
+<p>Persamaan linier dalam dua variabel dapat memiliki satu solusi, tidak ada solusi, atau banyak solusi, tergantung pada bagaimana garis-garis yang diwakili oleh persamaan tersebut berinteraksi satu sama lain di dalam bidang koordinat. Jika dua garis berpotongan di satu titik, maka sistem memiliki satu solusi unik, yang berarti ada satu nilai pasangan ((x, y)) yang memenuhi kedua persamaan. Namun, jika kedua garis sejajar dan tidak pernah berpotongan, maka sistem tidak memiliki solusi karena tidak ada titik yang memenuhi kedua persamaan secara bersamaan. Sementara itu, jika kedua persamaan sebenarnya merepresentasikan garis yang sama, maka ada tak hingga banyak solusi, karena setiap titik pada garis tersebut memenuhi kedua persamaan. Oleh karena itu, jumlah solusi dari sistem persamaan linier bergantung pada kemiringan dan posisi relatif garis-garis yang diwakilinya.
+<strong>M₁ ≠ M₂</strong>, yang berarti garis-garis tersebut berpotongan pada satu titik. Kasus ini menghasilkan tepat satu solusi - titik perpotongan.</p>
 <p><strong>M₁ = M₂</strong> dan <strong>B₁ ≠ B₂</strong>, artinya keduanya sejajar tetapi tidak saling tumpang tindih. Kasus ini tidak menghasilkan solusi.</p>
 <p><strong>M₁ = M₂</strong> dan <strong>B₁ = B₂</strong>, yang berarti kedua garis tersebut saling tumpang tindih. Karena keduanya saling tumpang tindih di setiap titik pada garis, maka setiap titik pada garis tersebut merupakan solusi, dan jumlahnya tak terhingga!</p>
 <section id="satu-solusi-sistem-konsisten-dan-independen">
 <h2>1. Satu Solusi (Sistem Konsisten dan Independen)<a class="headerlink" href="#satu-solusi-sistem-konsisten-dan-independen" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>Terjadi ketika dua garis <strong>berpotongan di satu titik</strong>.</p></li>
-<li><p>Gradien (kemiringan) kedua garis <strong>berbeda</strong>, sehingga mereka tidak sejajar.</p></li>
-<li><p>Contoh:</p>
+<p>Sistem persamaan linear memiliki satu solusi ketika satu set nilai yang memenuhi semua persamaan dalam sistem. Ini terjadi ketika tidak ada variabel yang saling bergantung satu sama lain dan jumlah persamaannya sama dengan jumlah variabelnya, Terjadi ketika dua garis <strong>berpotongan di satu titik</strong> dan Gradien (kemiringan) kedua garis <strong>berbeda</strong>, sehingga mereka tidak sejajar.
+Contoh:</p>
 <div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
 x - y = 2
 </pre></div>
 </div>
-</li>
+<ul class="simple">
 <li><p>Grafiknya menunjukkan dua garis yang berpotongan di satu titik.</p></li>
 </ul>
 </section>
@@ -425,15 +423,13 @@ x - y = 2
 </section>
 <section id="banyak-solusi-sistem-konsisten-dan-bergantung">
 <h2>3. Banyak Solusi (Sistem Konsisten dan Bergantung)<a class="headerlink" href="#banyak-solusi-sistem-konsisten-dan-bergantung" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>Terjadi ketika dua persamaan mewakili <strong>garis yang sama</strong>.</p></li>
-<li><p>Satu persamaan merupakan <strong>kelipatan</strong> dari yang lain.</p></li>
-<li><p>Contoh:</p>
+<p>Suatu persamaan dapat memiliki solusi tak terhingga banyaknya jika persamaan tersebut memenuhi beberapa kondisi. Sistem persamaan memiliki solusi tak terhingga banyaknya jika garis-garisnya berimpit, dan keduanya memiliki titik potong sumbu-y yang sama . Jika kedua garis tersebut memiliki titik potong sumbu-y dan kemiringan yang sama, maka keduanya sebenarnya berada pada garis yang sama persis.</p>
+<p>Contoh:</p>
 <div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
 4x + 6y = 12  \quad (\text{dibagi 2 menjadi } 2x + 3y = 6)
 </pre></div>
 </div>
-</li>
+<ul class="simple">
 <li><p>Grafiknya menunjukkan dua garis yang <strong>sama</strong>, sehingga memiliki <strong>tak hingga banyaknya solusi</strong>.</p></li>
 </ul>
 </section>
