@@ -16,7 +16,7 @@ Contoh:
   x - y = 2
   ```
 
-<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Satu Solusi" src="https://www.geogebra.org/material/iframe/id/cb5d8hhu/width/1280/height/568/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="568px" style="border:0px;"> </iframe>
 
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
@@ -29,6 +29,9 @@ Contoh:
   2x + 3y = 6
   2x + 3y = 10
   ```
+
+<iframe scrolling="no" title="Tidak Ada Solusi" src="https://www.geogebra.org/material/iframe/id/n6wh4t2b/width/1280/height/568/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="568px" style="border:0px;"> </iframe>
+
 - Grafiknya menunjukkan dua garis sejajar yang tidak memiliki titik perpotongan.
 
 ## 3. Banyak Solusi (Sistem Konsisten dan Bergantung)
@@ -40,4 +43,7 @@ Contoh:
 2x + 4y = 6
 𝑥 + 2𝑦 = 3
   ```
+
+<iframe scrolling="no" title="Solusi Tak Terhingga" src="https://www.geogebra.org/material/iframe/id/zda7cvc7/width/1280/height/568/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="568px" style="border:0px;"> </iframe>
+
 - Grafiknya menunjukkan dua garis yang **sama**, sehingga memiliki **tak hingga banyaknya solusi**.
