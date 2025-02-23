@@ -16,7 +16,6 @@ Contoh:
   x - y = 2
   ```
 
-<img src="Satu Solusi.jpg" alt="....">
 
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
