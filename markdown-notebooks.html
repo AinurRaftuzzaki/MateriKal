@@ -354,7 +354,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -370,6 +372,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-substitusi">Metode Eliminasi Substitusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss-jordan">Metode Eliminasi Gauss-Jordan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-matriks-invers-matriks">Metode Eliminasi Matriks (Invers Matriks)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -381,6 +394,81 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="eliminasi-persamaan-linier">
 <h1><strong>Eliminasi Persamaan Linier</strong><a class="headerlink" href="#eliminasi-persamaan-linier" title="Link to this heading">#</a></h1>
+<p>Penyelesaian SPLDV menggunakan model eliminasi adalah dengan menghapus atau menghilangkan salah satu variabel dalam persamaan tersebut. Dalam sistem persamaan linier, terdapat beberapa metode eliminasi yang digunakan untuk menyelesaikan sistem persamaan tersebut.</p>
+<section id="metode-eliminasi-substitusi">
+<h2>Metode Eliminasi Substitusi<a class="headerlink" href="#metode-eliminasi-substitusi" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>alah satu variabel diisolasi dalam satu persamaan.</p></li>
+<li><p>Hasil isolasi variabel tersebut kemudian disubstitusikan ke persamaan lainnya.</p></li>
+<li><p>Proses ini diulang sampai diperoleh nilai semua variabel.</p></li>
+</ul>
+<p><strong>Contoh:</strong></p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + y = 8
+x - y = 2
+</pre></div>
+</div>
+<p><strong>Langkah-langkah:</strong></p>
+<ol class="arabic">
+<li><p>Isolasi salah satu variabel dari persamaan kedua:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>x = y + 2
+</pre></div>
+</div>
+</li>
+<li><p>Substitusikan ke persamaan pertama:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2(y + 2) + y = 8
+2y + 4 + y = 8
+3y = 4
+y = 4/3
+</pre></div>
+</div>
+</li>
+<li><p>Substitusikan kembali nilai <code class="docutils literal notranslate"><span class="pre">y</span></code>:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>x = 4/3 + 2 = 10/3
+</pre></div>
+</div>
+</li>
+</ol>
+<p><strong>Hasil:</strong></p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>x = 10/3, y = 4/3
+</pre></div>
+</div>
+</section>
+<section id="metode-eliminasi-gauss">
+<h2>Metode Eliminasi Gauss<a class="headerlink" href="#metode-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Mengubah sistem persamaan linier menjadi bentuk segitiga atas dengan menggunakan operasi baris dasar.</p></li>
+<li><p>Setelah diperoleh bentuk segitiga atas, solusi dapat ditemukan dengan substitusi mundur (back-substitution).</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+x - y = 2
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="metode-eliminasi-gauss-jordan">
+<h2>Metode Eliminasi Gauss-Jordan<a class="headerlink" href="#metode-eliminasi-gauss-jordan" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Merupakan penyempurnaan dari metode eliminasi Gauss.</p></li>
+<li><p>Mengubah sistem persamaan menjadi bentuk matriks eselon baris tereduksi (Reduced Row Echelon Form, RREF).</p></li>
+<li><p>Penyelesaian diperoleh langsung tanpa perlu substitusi mundur.</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+x - y = 2
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="metode-eliminasi-matriks-invers-matriks">
+<h2>Metode Eliminasi Matriks (Invers Matriks)<a class="headerlink" href="#metode-eliminasi-matriks-invers-matriks" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Jika sistem persamaan dapat dituliskan dalam bentuk matriks AX = B, maka solusi dapat ditemukan dengan X = A⁻¹B, asalkan matriks A memiliki invers.</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+x - y = 2
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -428,6 +516,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-substitusi">Metode Eliminasi Substitusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss-jordan">Metode Eliminasi Gauss-Jordan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-matriks-invers-matriks">Metode Eliminasi Matriks (Invers Matriks)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
