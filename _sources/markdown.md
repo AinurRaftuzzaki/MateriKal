@@ -1,95 +1,98 @@
-# **Definisi Sistem Persamaan Linier**
+# **Sistem Persamaan Linear (SPL)**
 
-Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.
+## **1. Konsep Sistem Persamaan Linear (SPL)**
+Sistem persamaan linear (SPL) mencakup definisi, jenis-jenis SPL, dan metode penyelesaiannya.
 
-Persamaan tersebut disebut linear karena ada hubungan  matematis yang digambarkan sebagai garis lurus dalam sistem koordinat Kartesius. Sistem koordinat tersebut akan menetapkan setiap titik secara unik dalam bidang dengan serangkaian koordinat numerik.
+**Video terkait materi ini dapat diakses dengan cara memindai kode di bawah ini.**
 
-Selain itu persamaan linear juga bisa kita artikan sebagai persamaan yang memiliki pangkat tertinggi dari variabelnya selalu satu. Persamaan linear juga kerap disebut sebagai persamaan satu derajat. Dalam persamaan linear akan ada beberapa hal penting seperti variable, koefisien dan juga constant
+## **2. Aplikasi SPL dalam Kehidupan Sehari-hari**
+Banyak permasalahan nyata yang dapat dimodelkan menggunakan SPL, di antaranya:
 
-**Ciri-Ciri Persamaan Linear**
+1. **Masalah Harga Barang di Koperasi**
+   - Siswa A membeli 3 buku tulis dan 2 pulpen seharga Rp22.000,-.
+   - Siswa B membeli 2 buku tulis dan 2 pulpen seharga Rp16.000,-.
+   - Berapa harga satuan buku tulis dan pulpen?
+```
 
-Dalam persamaan linear memiliki ciri-ciri tertentu. Akan lebih mudah mengetahui ciri tersebut jika melihat langsung dari soal persamaan linear. Namun beberapa ciri yang ada di bawah ini juga akan memantu kalian lebih memahami persamaan linear.
+2. **Masalah Perjalanan Pesawat**
+   - Pesawat P1 menempuh perjalanan 1.500 km selama 2,5 jam dengan arah angin.
+   - Pesawat P2 menempuh perjalanan yang sama selama 3 jam melawan arah angin.
+   - Tentukan kecepatan pesawat dan kecepatan angin.
+```
 
-1. Persamaan linear akan memiliki pangkat satu.
-2. Persamaan linear tidak memiliki perkalian variabel.
-3. Persamaan linear biasanya akan terdiri dari dua ruas yang akan dihubungkan dengan tanda sama dengan (=).
-4. Penjumlahan, pengurangan, perkalian dan pembagian pada kedua ruas persamaan linear tidak akan mengubah bentuk nilai persamaan.
+3. **Masalah Perpotongan Garis**
+   - Diberikan dua persamaan garis: 
+     \[ 3x + 2y = 10 \] 
+     \[ 3x + 2y = 25 \]
+   - Apakah kedua garis berpotongan? Jika ya, tentukan titik potongnya.
+```
 
-## **Unsur-Unsur Dalam Persamaan Linear**
+4. **Masalah Tiket Pameran**
+   - Tiket anak-anak: Rp20.000,00
+   - Tiket dewasa: Rp35.000,00
+   - Terdapat 1.400 pengunjung dengan total pendapatan Rp43.000.000,00.
+   - Tentukan jumlah pengunjung anak-anak dan dewasa.
+```
 
-Dalam proses penyelesaiannya, persamaan linear akan menggunakan rumus-rumus tertentu. Dalam rumus persamaan linear tersebut akan memiliki beberapa unsur penting. Pada penjelasan sebelumnya beberapa unsur dalam penyelesaian persamaan linear sudah dijelaskan secara singkat.
+5. **Masalah Bilangan Tiga Digit**
+   - Bilangan tiga digit \(zyz\) dengan digit \(x, y, z\) memenuhi:
+     \[ x + y + z = 10 \]
+   - Jika urutan digit dibalik, nilainya berkurang 99.
+   - Tentukan semua kemungkinan bilangan tersebut.
 
-### Variable
+## **3. Model Matematika dan Penyelesaian SPL**
+Setiap permasalahan di atas dapat diterjemahkan ke dalam model matematika dengan sistem persamaan linear. Contoh:
 
-Variabel dalam persamaan linear bisa diartikan sebagai penambah atau pengganti suatu bilangan yang pada dasarnya belum diketahui besaran nilai secara jelas. Variable sendiri kebanyak akan disimbolkan menggunakan huruf, misalnya seperti a, b, c, …, x, y, z.
+- **Masalah Kecepatan Pesawat**
+  - Misalkan:
+    - \( v_P \) = kecepatan pesawat
+    - \( v_A \) = kecepatan angin
+  - Dari formula "jarak = kecepatan × waktu":
+    \[
+    (v_P + v_A) × 2.5 = 1500
+    \]
+    \[
+    (v_P - v_A) × 3 = 1500
+    \]
+  - Disederhanakan:
+    \[
+    v_P + v_A = 600
+    \]
+    \[
+    v_P - v_A = 500
+    \]
+  - Dengan eliminasi:
+    \[
+    2v_P = 1100 \Rightarrow v_P = 550
+    \]
+    \[
+    v_A = 50
+    \]
+  - Hasil: Kecepatan pesawat = **550 km/jam**, kecepatan angin = **50 km/jam**.
 
-### Koefisien
+## **4. Metode Penyelesaian SPL**
+Terdapat beberapa metode penyelesaian SPL:
+- **Metode Substitusi**
+- **Metode Eliminasi**
+- **Metode Matriks (Invers & Determinan)**
+- **Metode Numerik (Jacobi & Gauss-Seidel)**
 
-Koefisien adalah suatu bilangan yang dapat menjelaskan banyaknya jumlah variabel sejenis. Keberadaan koefisien sendiri akan berada di depan variable. Sebagai contohnya adalah pada soal 2 pensil dan 4 spidol dapat dituliskan dalam persamaan seperti: Pensil = x , spidol = y.
+Untuk sistem dengan lebih banyak variabel dan persamaan, metode numerik lebih efektif karena kompleksitas perhitungan manual yang tinggi.
 
-### Konstanta
+## **5. Implementasi dalam Python**
+Berikut contoh penyelesaian SPL menggunakan **NumPy**:
 
-Ada juga unsur konstanta dalam persamaan linear. Dimana konstanta adalah suatu nilai yang konstan yang tidak diikuti oleh variable pada bagian belakang. Sebagai contohnya adalah pada soal persamaan 2x + 5y + 7. Angka 7 pada soal persamaan tersebut adalah bentuk konstanta. Hal ini tak lain karena tidak ada variable apapun di bagian belakang angka 7.
+```python
+import numpy as np
 
-### Suku
+# Matriks koefisien
+A = np.array([[3, 2], [2, 2]])
+# Vektor hasil
+B = np.array([22, 16])
 
-Suku adalah bagian dari bentuk persamaan. Suku akan terdiri beberapa unsur penting persamaan linear, mulai dari koefisien, variable dan juga konstanta. Sebagai contohnya pada soal persamaan 7x-y+4. Suku dari soal persamaan tersebut adalah 6x, -y, 4.
+# Menyelesaikan sistem persamaan
+X = np.linalg.solve(A, B)
+print("Solusi: Buku tulis =", X[0], ", Pulpen =", X[1])
+```
 
-## **Jenis-Jenis Persamaan Linear**
-
-Persamaan linear dibagi menjadi beberapa jenis. Dimana ada tiga jenis persamaan linear, mulai dari persamaan linear satu variabel, persamaan linear dua variabel dan persamaan linear tiga variabel. Namun  jika ditulis dalam  matematik, persamaan linier secara umum adalah y = mx + b.
-
-### Persamaan Linear Satu Variabel
-
-Persamaan linear satu variabel adalah salah satu jenis persamaan linear. Seperti dengan namanya, persamaan linear satu variabel tersebut akan memiliki satu variabel dengan pangkat 1 dalam bentuk kalimat terbuka dan dapat dihubungkan dengan tanda =.
-Secara umum bentuk persamaan linear satu variabel jika dituliskan secara matematik adalah seperti berikut ini.
-
-  ```math
-  ax + b = 0
-  ```
-Keterangan:
-a = koefisien
-b = konstanta
-x = variable
-
-### Persamaan Linear Dua Variabel
-
-Selanjutnya, ada persamaan linear dua variabel yang juga menjadi salah satu jenis persamaan linear. Persamaan linear dua variabel ini adalah sistem persamaan yang memiliki variabel berjumlah dua dengan pangkat 1. Persamaan linear dua variabel tersebut akan menggunakan relasi = dan tidak akan menggunakan perkalian variabel pada setiap persamaan.
-Secara matematis, persamaan linear dua variabel bisa dituliskan seperti yang ada di bawah ini:
-
-  ```math
-  ax + by = c
-  ```
-
-### Persamaan Linear Tiga Variabel
-
-Lalu masih ada persamaan persamaan linear tiga variabel yang juga merupakan jenis persamaan linear. Secara mudahnya persamaan linear tiga variabel ini adalah bentuk perluasan dari persamaan linier dua variabel.
-
-Dimana untuk menyelesaikan persamaan linear tiga variabel ini bisa dilakukan dengan dua cara yaitu menggunakan metode subtitusi dan metode eliminasi. Sistem persamaan linear tiga variabel ini akan menentukan titik potong.
-Secara umum penulisan persamaan linear tiga variabel adalah sebagai berikut.
-
-  ```math
-  ax + by + cy = d
-  ```
-
-## **Metode Penyelesaian Persamaan Linear**
-
-Pada bagian jenis persamaan linear ada beberapa metode yang bisa digunakan untuk menyelesaikan soal persamaan. Dimana metode-metode tersebut adalah seperti metode subtitusi dan metode persamaan.
-
-###Metode Substitusi
-
-Metode substitusi adalah salah satu cara untuk menyelesaikan soal mengenai persamaan linear dua variabel atau tiga variabel. Dimana nantinya ketika menggunakan metode substitusi ini akan mengubah suatu variabel dengan variabel dari persamaan lainnya.
-
-  ```math
-  2x + 4y = 28
-  3x + 2y = 22
-  ```
-
-### Metode Eliminasi
-
-Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.
-
-  ```math
-  x + 2y = 20
-  2x + 3y = 33
-  ```
+Kode ini menyelesaikan SPL dengan **numpy.linalg.solve()**, metode yang lebih sistematis dibanding substitusi atau eliminasi manual.
