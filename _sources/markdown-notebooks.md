@@ -14,7 +14,9 @@ Contoh:
   ```math
   2x + 3y = 6
   x - y = 2
+
 <img src="Satu Solusi.jpg" alt="satu solusi">
+
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
 ## 2. Tidak Ada Solusi (Sistem Inkonisten)
