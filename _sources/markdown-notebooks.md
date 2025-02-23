@@ -14,6 +14,7 @@ Contoh:
   ```math
   2x + 3y = 6
   x - y = 2
+  ```
 
 <img src="Satu Solusi.jpg" alt="satu solusi">
 
