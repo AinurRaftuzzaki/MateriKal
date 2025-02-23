@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Solusi &#8212; My sample book</title>
+    <title>Eliminasi Persamaan Linier &#8212; My sample book</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Sistem Persamaan Linear (SPL)" href="notebooks.html" />
+    <link rel="prev" title="Solusi Persamaan Linier" href="notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,14 +174,14 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Komputasi Aljabar Linier
+                    Definisi Sistem Persamaan Linier
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html"><strong>Definisi Sistem Persamaan Linier</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html"><strong>Sistem Persamaan Linear (SPL)</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Solusi</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html"><strong>Sistem Persamaan Linear (SPL)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html"><strong>Solusi Persamaan Linier</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Eliminasi Persamaan Linier</strong></a></li>
 </ul>
 
     </div>
@@ -354,9 +354,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -367,21 +365,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Solusi</h1>
+    <h1>Eliminasi Persamaan Linier</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi-sistem-konsisten-dan-independen">1. Satu Solusi (Sistem Konsisten dan Independen)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-ada-solusi-sistem-inkonisten">2. Tidak Ada Solusi (Sistem Inkonisten)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banyak-solusi-sistem-konsisten-dan-bergantung">3. Banyak Solusi (Sistem Konsisten dan Bergantung)</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -391,51 +379,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="solusi">
-<h1><strong>Solusi</strong><a class="headerlink" href="#solusi" title="Link to this heading">#</a></h1>
-<p>Persamaan linier dalam dua variabel dapat memiliki satu solusi, tidak ada solusi, atau banyak solusi, tergantung pada bagaimana garis-garis yang diwakili oleh persamaan tersebut berinteraksi satu sama lain di dalam bidang koordinat. Jika dua garis berpotongan di satu titik, maka sistem memiliki satu solusi unik, yang berarti ada satu nilai pasangan ((x, y)) yang memenuhi kedua persamaan. Namun, jika kedua garis sejajar dan tidak pernah berpotongan, maka sistem tidak memiliki solusi karena tidak ada titik yang memenuhi kedua persamaan secara bersamaan. Sementara itu, jika kedua persamaan sebenarnya merepresentasikan garis yang sama, maka ada tak hingga banyak solusi, karena setiap titik pada garis tersebut memenuhi kedua persamaan. Oleh karena itu, jumlah solusi dari sistem persamaan linier bergantung pada kemiringan dan posisi relatif garis-garis yang diwakilinya.</p>
-<p><strong>M₁ ≠ M₂</strong>, yang berarti garis-garis tersebut berpotongan pada satu titik. Kasus ini menghasilkan tepat satu solusi - titik perpotongan.</p>
-<p><strong>M₁ = M₂</strong> dan <strong>B₁ ≠ B₂</strong>, artinya keduanya sejajar tetapi tidak saling tumpang tindih. Kasus ini tidak menghasilkan solusi.</p>
-<p><strong>M₁ = M₂</strong> dan <strong>B₁ = B₂</strong>, yang berarti kedua garis tersebut saling tumpang tindih. Karena keduanya saling tumpang tindih di setiap titik pada garis, maka setiap titik pada garis tersebut merupakan solusi, dan jumlahnya tak terhingga!</p>
-<section id="satu-solusi-sistem-konsisten-dan-independen">
-<h2>1. Satu Solusi (Sistem Konsisten dan Independen)<a class="headerlink" href="#satu-solusi-sistem-konsisten-dan-independen" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan linear memiliki satu solusi ketika satu set nilai yang memenuhi semua persamaan dalam sistem. Ini terjadi ketika tidak ada variabel yang saling bergantung satu sama lain dan jumlah persamaannya sama dengan jumlah variabelnya, Terjadi ketika dua garis <strong>berpotongan di satu titik</strong> dan Gradien (kemiringan) kedua garis <strong>berbeda</strong>, sehingga mereka tidak sejajar.
-Contoh:</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
-x - y = 2
-</pre></div>
-</div>
-<iframe scrolling="no" title="Satu Solusi" src="https://www.geogebra.org/material/iframe/id/dwdd9gdh/width/600/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
-<ul class="simple">
-<li><p>Grafiknya menunjukkan dua garis yang berpotongan di satu titik.</p></li>
-</ul>
-</section>
-<section id="tidak-ada-solusi-sistem-inkonisten">
-<h2>2. Tidak Ada Solusi (Sistem Inkonisten)<a class="headerlink" href="#tidak-ada-solusi-sistem-inkonisten" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan yang tidak memiliki solusi adalah sekumpulan fungsi yang tidak memiliki pasangan terurut x , y (atau variabel apa pun yang ada dalam soal) yang memenuhi semua persamaan. Jadi, fungsi-fungsi tersebut tidak semuanya berpotongan di titik mana pun. Jika sistem tersebut memiliki lebih dari dua fungsi, mungkin ada satu atau lebih titik perpotongan, tetapi tidak akan ada titik di mana semua fungsi berpotongan</p>
-<p>Contoh:</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
-2x + 3y = 10
-</pre></div>
-</div>
-<iframe scrolling="no" title="Tidak Ada Solusi" src="https://www.geogebra.org/material/iframe/id/n6wh4t2b/width/600/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
-<ul class="simple">
-<li><p>Grafiknya menunjukkan dua garis sejajar yang tidak memiliki titik perpotongan.</p></li>
-</ul>
-</section>
-<section id="banyak-solusi-sistem-konsisten-dan-bergantung">
-<h2>3. Banyak Solusi (Sistem Konsisten dan Bergantung)<a class="headerlink" href="#banyak-solusi-sistem-konsisten-dan-bergantung" title="Link to this heading">#</a></h2>
-<p>Suatu persamaan dapat memiliki solusi tak terhingga banyaknya jika persamaan tersebut memenuhi beberapa kondisi. Sistem persamaan memiliki solusi tak terhingga banyaknya jika garis-garisnya berimpit, dan keduanya memiliki titik potong sumbu-y yang sama . Jika kedua garis tersebut memiliki titik potong sumbu-y dan kemiringan yang sama, maka keduanya sebenarnya berada pada garis yang sama persis.</p>
-<p>Contoh:</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 4y = 6
-𝑥 + 2𝑦 = 3
-</pre></div>
-</div>
-<iframe scrolling="no" title="Solusi Tak Terhingga" src="https://www.geogebra.org/material/iframe/id/zda7cvc7/width/600/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
-<ul class="simple">
-<li><p>Grafiknya menunjukkan dua garis yang <strong>sama</strong>, sehingga memiliki <strong>tak hingga banyaknya solusi</strong>.</p></li>
-</ul>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="eliminasi-persamaan-linier">
+<h1><strong>Eliminasi Persamaan Linier</strong><a class="headerlink" href="#eliminasi-persamaan-linier" title="Link to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -474,7 +419,7 @@ x - y = 2
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Sistem Persamaan Linear (SPL)</strong></p>
+        <p class="prev-next-title"><strong>Solusi Persamaan Linier</strong></p>
       </div>
     </a>
 </div>
@@ -483,23 +428,6 @@ x - y = 2
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi-sistem-konsisten-dan-independen">1. Satu Solusi (Sistem Konsisten dan Independen)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-ada-solusi-sistem-inkonisten">2. Tidak Ada Solusi (Sistem Inkonisten)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banyak-solusi-sistem-konsisten-dan-bergantung">3. Banyak Solusi (Sistem Konsisten dan Bergantung)</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
