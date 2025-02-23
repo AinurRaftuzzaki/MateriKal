@@ -379,7 +379,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-substitusi">Metode Eliminasi Substitusi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">Metode Eliminasi Gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss-jordan">Metode Eliminasi Gauss-Jordan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-matriks-invers-matriks">Metode Eliminasi Matriks (Invers Matriks)</a></li>
 </ul>
             </nav>
@@ -435,28 +434,57 @@ y = 4/3
 </section>
 <section id="metode-eliminasi-gauss">
 <h2>Metode Eliminasi Gauss<a class="headerlink" href="#metode-eliminasi-gauss" title="Link to this heading">#</a></h2>
-<ul>
+<ul class="simple">
 <li><p>Mengubah sistem persamaan linier menjadi bentuk segitiga atas dengan menggunakan operasi baris dasar.</p></li>
-<li><p>Setelah diperoleh bentuk segitiga atas, solusi dapat ditemukan dengan substitusi mundur (back-substitution).</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+<li><p>Setelah diperoleh bentuk segitiga atas, solusi dapat ditemukan dengan substitusi mundur (back-substitution).</p></li>
+</ul>
+<p><strong>Contoh:</strong></p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>x + 2y + 3z = 9
+2x + 3y + z = 4
+3x + y + 2z = 10
+</pre></div>
+</div>
+<p><strong>Matriks Augmented:</strong></p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; |9 \\
+                 2 &amp; 3 &amp; 1 &amp; |4 \\
+                 3 &amp; 1 &amp; 2 &amp; |10 \end{bmatrix}
+</pre></div>
+</div>
+<p><strong>Langkah-langkah:</strong></p>
+<ol class="arabic simple">
+<li><p>Eliminasi <code class="docutils literal notranslate"><span class="pre">x</span></code>:</p></li>
+</ol>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; |9 \\
+                 0 &amp; -1 &amp; -5 &amp; |-14 \\
+                 0 &amp; -5 &amp; -7 &amp; |-17 \end{bmatrix}
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Eliminasi <code class="docutils literal notranslate"><span class="pre">y</span></code>:</p></li>
+</ol>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; |9 \\
+                 0 &amp; -1 &amp; -5 &amp; |-14 \\
+                 0 &amp; 0 &amp; -32 &amp; |-87 \end{bmatrix}
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Substitusi mundur:</p></li>
+</ol>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>z = \frac{-87}{-32} = \frac{87}{32}
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+## Metode Eliminasi Gauss-Jordan
+
+- Merupakan penyempurnaan dari metode eliminasi Gauss.
+- Mengubah sistem persamaan menjadi bentuk matriks eselon baris tereduksi (Reduced Row Echelon Form, RREF).
+- Penyelesaian diperoleh langsung tanpa perlu substitusi mundur.
+
+```math
+2x + 3y = 6
 x - y = 2
 </pre></div>
 </div>
-</li>
-</ul>
-</section>
-<section id="metode-eliminasi-gauss-jordan">
-<h2>Metode Eliminasi Gauss-Jordan<a class="headerlink" href="#metode-eliminasi-gauss-jordan" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>Merupakan penyempurnaan dari metode eliminasi Gauss.</p></li>
-<li><p>Mengubah sistem persamaan menjadi bentuk matriks eselon baris tereduksi (Reduced Row Echelon Form, RREF).</p></li>
-<li><p>Penyelesaian diperoleh langsung tanpa perlu substitusi mundur.</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
-x - y = 2
-</pre></div>
-</div>
-</li>
-</ul>
 </section>
 <section id="metode-eliminasi-matriks-invers-matriks">
 <h2>Metode Eliminasi Matriks (Invers Matriks)<a class="headerlink" href="#metode-eliminasi-matriks-invers-matriks" title="Link to this heading">#</a></h2>
@@ -528,7 +556,6 @@ x - y = 2
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-substitusi">Metode Eliminasi Substitusi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">Metode Eliminasi Gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss-jordan">Metode Eliminasi Gauss-Jordan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-matriks-invers-matriks">Metode Eliminasi Matriks (Invers Matriks)</a></li>
 </ul>
   </nav></div>

@@ -38,9 +38,36 @@ x = 10/3, y = 4/3
 - Mengubah sistem persamaan linier menjadi bentuk segitiga atas dengan menggunakan operasi baris dasar.
 - Setelah diperoleh bentuk segitiga atas, solusi dapat ditemukan dengan substitusi mundur (back-substitution).
 
-  ```math
-  2x + 3y = 6
-  x - y = 2
+**Contoh:**
+```math
+x + 2y + 3z = 9
+2x + 3y + z = 4
+3x + y + 2z = 10
+```
+**Matriks Augmented:**
+```math
+\begin{bmatrix} 1 & 2 & 3 & |9 \\
+                 2 & 3 & 1 & |4 \\
+                 3 & 1 & 2 & |10 \end{bmatrix}
+```
+**Langkah-langkah:**
+1. Eliminasi `x`:
+```math
+\begin{bmatrix} 1 & 2 & 3 & |9 \\
+                 0 & -1 & -5 & |-14 \\
+                 0 & -5 & -7 & |-17 \end{bmatrix}
+```
+2. Eliminasi `y`:
+```math
+\begin{bmatrix} 1 & 2 & 3 & |9 \\
+                 0 & -1 & -5 & |-14 \\
+                 0 & 0 & -32 & |-87 \end{bmatrix}
+```
+3. Substitusi mundur:
+```math
+z = \frac{-87}{-32} = \frac{87}{32}
+```
+
   ```
 
 ## Metode Eliminasi Gauss-Jordan
