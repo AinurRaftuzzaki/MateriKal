@@ -1,6 +1,8 @@
 # Solusi
 Sistem persamaan linier dapat memiliki **satu solusi**, **tidak ada solusi**, atau **banyak solusi**, tergantung pada hubungan antara garis-garis dalam sistem tersebut.
 
+**M₁ = M₂** dan **B₁ ≠ B₂**
+
 ## 1. Satu Solusi (Sistem Konsisten dan Independen)
 - Terjadi ketika dua garis **berpotongan di satu titik**.
 - Gradien (kemiringan) kedua garis **berbeda**, sehingga mereka tidak sejajar.
@@ -12,9 +14,10 @@ Sistem persamaan linier dapat memiliki **satu solusi**, **tidak ada solusi**, at
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
 ## 2. Tidak Ada Solusi (Sistem Inkonisten)
-- Terjadi ketika dua garis **sejajar tetapi tidak berpotongan**.
-- Kedua persamaan memiliki **gradien yang sama**, tetapi **intersep (potongan sumbu y) berbeda**.
-- Contoh:
+
+Sistem persamaan yang tidak memiliki solusi adalah sekumpulan fungsi yang tidak memiliki pasangan terurut x , y (atau variabel apa pun yang ada dalam soal) yang memenuhi semua persamaan. Jadi, fungsi-fungsi tersebut tidak semuanya berpotongan di titik mana pun. Jika sistem tersebut memiliki lebih dari dua fungsi, mungkin ada satu atau lebih titik perpotongan, tetapi tidak akan ada titik di mana semua fungsi berpotongan
+
+Contoh:
   ```math
   2x + 3y = 6
   2x + 3y = 10
