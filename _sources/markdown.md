@@ -1,79 +1,40 @@
 # **Sistem Persamaan Linear (SPL)**
 
-## **1. Konsep Sistem Persamaan Linear (SPL)**
-Sistem persamaan linear (SPL) mencakup definisi, jenis-jenis SPL, dan metode penyelesaiannya.
+## **Konsep Sistem Persamaan Linear (SPL)**
+Sistem Persamaan Linier (SPL) adalah kumpulan dari dua atau lebih persamaan linier yang memiliki satu atau lebih variabel yang harus dipenuhi secara bersamaan. Dalam SPL, kita mencari nilai variabel yang memenuhi semua persamaan dalam sistem tersebut.
 
+## Bentuk Umum SPL
 
-## **2. Aplikasi SPL dalam Kehidupan Sehari-hari**
-Banyak permasalahan nyata yang dapat dimodelkan menggunakan SPL, di antaranya:
-
-1. **Masalah Harga Barang di Koperasi**
-   - Siswa A membeli 3 buku tulis dan 2 pulpen seharga Rp22.000,-.
-   - Siswa B membeli 2 buku tulis dan 2 pulpen seharga Rp16.000,-.
-   - Berapa harga satuan buku tulis dan pulpen?
+### 1. Sistem dengan Dua Variabel
+```
+a1x + b1y = c1
+a2x + b2y = c2
 ```
 
-2. **Masalah Perjalanan Pesawat**
-   - Pesawat P1 menempuh perjalanan 1.500 km selama 2,5 jam dengan arah angin.
-   - Pesawat P2 menempuh perjalanan yang sama selama 3 jam melawan arah angin.
-   - Tentukan kecepatan pesawat dan kecepatan angin.
+### 2. Sistem dengan Tiga Variabel
+```
+a1x + b1y + c1z = d1
+a2x + b2y + c2z = d2
+a3x + b3y + c3z = d3
 ```
 
-3. **Masalah Perpotongan Garis**
-   - Diberikan dua persamaan garis: 
-     \[ 3x + 2y = 10 \] 
-     \[ 3x + 2y = 25 \]
-   - Apakah kedua garis berpotongan? Jika ya, tentukan titik potongnya.
-```
+## Metode Penyelesaian
 
-4. **Masalah Tiket Pameran**
-   - Tiket anak-anak: Rp20.000,00
-   - Tiket dewasa: Rp35.000,00
-   - Terdapat 1.400 pengunjung dengan total pendapatan Rp43.000.000,00.
-   - Tentukan jumlah pengunjung anak-anak dan dewasa.
-```
+### 1. Metode Substitusi
+- Nyatakan salah satu variabel dalam bentuk variabel lainnya.
+- Substitusikan ke dalam persamaan lain.
 
-5. **Masalah Bilangan Tiga Digit**
-   - Bilangan tiga digit \(zyz\) dengan digit \(x, y, z\) memenuhi:
-     \[ x + y + z = 10 \]
-   - Jika urutan digit dibalik, nilainya berkurang 99.
-   - Tentukan semua kemungkinan bilangan tersebut.
+### 2. Metode Eliminasi
+- Eliminasi salah satu variabel dengan menjumlahkan atau mengurangkan persamaan.
 
-## **3. Model Matematika dan Penyelesaian SPL**
-Setiap permasalahan di atas dapat diterjemahkan ke dalam model matematika dengan sistem persamaan linear. Contoh:
+### 3. Metode Matriks (Invers atau Gauss-Jordan)
+- Gunakan konsep matriks untuk menyelesaikan sistem persamaan.
 
-- **Masalah Kecepatan Pesawat**
-  - Misalkan:
-    - \( v_P \) = kecepatan pesawat
-    - \( v_A \) = kecepatan angin
-  - Dari formula "jarak = kecepatan × waktu":
-    \[
-    (v_P + v_A) × 2.5 = 1500
-    \]
-    \[
-    (v_P - v_A) × 3 = 1500
-    \]
-  - Disederhanakan:
-    \[
-    v_P + v_A = 600
-    \]
-    \[
-    v_P - v_A = 500
-    \]
-  - Dengan eliminasi:
-    \[
-    2v_P = 1100 \Rightarrow v_P = 550
-    \]
-    \[
-    v_A = 50
-    \]
-  - Hasil: Kecepatan pesawat = **550 km/jam**, kecepatan angin = **50 km/jam**.
+### 4. Metode Grafik
+- Gambar grafik persamaan dan cari titik potong.
 
-## **4. Metode Penyelesaian SPL**
-Terdapat beberapa metode penyelesaian SPL:
-- **Metode Substitusi**
-- **Metode Eliminasi**
-- **Metode Matriks (Invers & Determinan)**
-- **Metode Numerik (Jacobi & Gauss-Seidel)**
+## Jenis Penyelesaian SPL
 
-Untuk sistem dengan lebih banyak variabel dan persamaan, metode numerik lebih efektif karena kompleksitas perhitungan manual yang tinggi.
+1. **SPL Konsisten dan Tertentu** → Memiliki satu solusi unik.
+2. **SPL Konsisten dan Tak Tertentu** → Memiliki banyak solusi.
+3. **SPL Tidak Konsisten** → Tidak memiliki solusi.
