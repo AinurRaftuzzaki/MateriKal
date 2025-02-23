@@ -382,7 +382,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-spl-dalam-kehidupan-sehari-hari"><strong>2. Aplikasi SPL dalam Kehidupan Sehari-hari</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-matematika-dan-penyelesaian-spl"><strong>3. Model Matematika dan Penyelesaian SPL</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-spl"><strong>4. Metode Penyelesaian SPL</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>5. Implementasi dalam Python</strong></a></li>
 </ul>
             </nav>
         </div>
@@ -399,7 +398,6 @@ document.write(`
 <section id="konsep-sistem-persamaan-linear-spl">
 <h2><strong>1. Konsep Sistem Persamaan Linear (SPL)</strong><a class="headerlink" href="#konsep-sistem-persamaan-linear-spl" title="Link to this heading">#</a></h2>
 <p>Sistem persamaan linear (SPL) mencakup definisi, jenis-jenis SPL, dan metode penyelesaiannya.</p>
-<p><strong>Video terkait materi ini dapat diakses dengan cara memindai kode di bawah ini.</strong></p>
 </section>
 <section id="aplikasi-spl-dalam-kehidupan-sehari-hari">
 <h2><strong>2. Aplikasi SPL dalam Kehidupan Sehari-hari</strong><a class="headerlink" href="#aplikasi-spl-dalam-kehidupan-sehari-hari" title="Link to this heading">#</a></h2>
@@ -498,23 +496,6 @@ v_A = 50
 </ul>
 <p>Untuk sistem dengan lebih banyak variabel dan persamaan, metode numerik lebih efektif karena kompleksitas perhitungan manual yang tinggi.</p>
 </section>
-<section id="implementasi-dalam-python">
-<h2><strong>5. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
-<p>Berikut contoh penyelesaian SPL menggunakan <strong>NumPy</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Matriks koefisien</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
-<span class="c1"># Vektor hasil</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">22</span><span class="p">,</span> <span class="mi">16</span><span class="p">])</span>
-
-<span class="c1"># Menyelesaikan sistem persamaan</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi: Buku tulis =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, Pulpen =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
-</div>
-<p>Kode ini menyelesaikan SPL dengan <strong>numpy.linalg.solve()</strong>, metode yang lebih sistematis dibanding substitusi atau eliminasi manual.</p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -561,7 +542,7 @@ v_A = 50
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Solusi Sistem Persamaan Linier</strong></p>
+        <p class="prev-next-title"><strong>Solusi Persamaan Linier</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -585,7 +566,6 @@ v_A = 50
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-spl-dalam-kehidupan-sehari-hari"><strong>2. Aplikasi SPL dalam Kehidupan Sehari-hari</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-matematika-dan-penyelesaian-spl"><strong>3. Model Matematika dan Penyelesaian SPL</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-spl"><strong>4. Metode Penyelesaian SPL</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>5. Implementasi dalam Python</strong></a></li>
 </ul>
   </nav></div>
 

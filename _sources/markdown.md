@@ -3,7 +3,6 @@
 ## **1. Konsep Sistem Persamaan Linear (SPL)**
 Sistem persamaan linear (SPL) mencakup definisi, jenis-jenis SPL, dan metode penyelesaiannya.
 
-**Video terkait materi ini dapat diakses dengan cara memindai kode di bawah ini.**
 
 ## **2. Aplikasi SPL dalam Kehidupan Sehari-hari**
 Banyak permasalahan nyata yang dapat dimodelkan menggunakan SPL, di antaranya:
@@ -78,21 +77,3 @@ Terdapat beberapa metode penyelesaian SPL:
 - **Metode Numerik (Jacobi & Gauss-Seidel)**
 
 Untuk sistem dengan lebih banyak variabel dan persamaan, metode numerik lebih efektif karena kompleksitas perhitungan manual yang tinggi.
-
-## **5. Implementasi dalam Python**
-Berikut contoh penyelesaian SPL menggunakan **NumPy**:
-
-```python
-import numpy as np
-
-# Matriks koefisien
-A = np.array([[3, 2], [2, 2]])
-# Vektor hasil
-B = np.array([22, 16])
-
-# Menyelesaikan sistem persamaan
-X = np.linalg.solve(A, B)
-print("Solusi: Buku tulis =", X[0], ", Pulpen =", X[1])
-```
-
-Kode ini menyelesaikan SPL dengan **numpy.linalg.solve()**, metode yang lebih sistematis dibanding substitusi atau eliminasi manual.
