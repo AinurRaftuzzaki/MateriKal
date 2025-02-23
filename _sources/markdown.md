@@ -26,12 +26,6 @@ a3x + b3y + c3z = d3
 ### 2. Metode Eliminasi
 - Eliminasi salah satu variabel dengan menjumlahkan atau mengurangkan persamaan.
 
-### 3. Metode Matriks (Invers atau Gauss-Jordan)
-- Gunakan konsep matriks untuk menyelesaikan sistem persamaan.
-
-### 4. Metode Grafik
-- Gambar grafik persamaan dan cari titik potong.
-
 ## Jenis Penyelesaian SPL
 
 1. **SPL Konsisten dan Tertentu** → Memiliki satu solusi unik.
