@@ -34,7 +34,7 @@ Suatu persamaan dapat memiliki solusi tak terhingga banyaknya jika persamaan ter
 
 Contoh:
   ```math
-  2x + 3y = 6
-  4x + 6y = 12  \quad (\text{dibagi 2 menjadi } 2x + 3y = 6)
+2x+4y=6
+𝑥+2𝑦=3
   ```
 - Grafiknya menunjukkan dua garis yang **sama**, sehingga memiliki **tak hingga banyaknya solusi**.
