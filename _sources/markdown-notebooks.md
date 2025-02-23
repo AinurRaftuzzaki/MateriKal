@@ -16,7 +16,7 @@ Contoh:
   x - y = 2
   ```
 
-<iframe scrolling="no" title="Satu Solusi" src="https://www.geogebra.org/material/iframe/id/cb5d8hhu/width/600/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Satu Solusi" src="https://www.geogebra.org/material/iframe/id/dwdd9gdh/width/600/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="500px" style="border:0px;"> </iframe>
 
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
