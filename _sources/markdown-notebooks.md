@@ -17,6 +17,7 @@ Contoh:
   ```
 
 <img src="Satu Solusi.jpg" alt="Satu Solusi">
+
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
 ## 2. Tidak Ada Solusi (Sistem Inkonisten)
