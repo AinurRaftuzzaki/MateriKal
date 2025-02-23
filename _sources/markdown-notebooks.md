@@ -16,7 +16,7 @@ Contoh:
   x - y = 2
   ```
 
-<img src="https://www.geogebra.org/calculator/qrzzeyck" alt="Satu Solusi">
+<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
 - Grafiknya menunjukkan dua garis yang berpotongan di satu titik.
 
