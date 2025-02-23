@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Definisi Sistem Persamaan Linier &#8212; My sample book</title>
+    <title>Solusi &#8212; My sample book</title>
   
   
   
@@ -181,7 +181,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Definisi Sistem Persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html"><strong>Sistem Persamaan Linear (SPL)</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Definisi Sistem Persamaan Linier</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solusi</a></li>
 </ul>
 
     </div>
@@ -367,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Definisi Sistem Persamaan Linier</h1>
+    <h1>Solusi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,10 +377,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan-linear"><strong>2. Contoh Sistem Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi-sistem-konsisten-dan-independen">1. Satu Solusi (Sistem Konsisten dan Independen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-ada-solusi-sistem-inkonisten">2. Tidak Ada Solusi (Sistem Inkonisten)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banyak-solusi-sistem-konsisten-dan-bergantung">3. Banyak Solusi (Sistem Konsisten dan Bergantung)</a></li>
 </ul>
             </nav>
         </div>
@@ -392,62 +391,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="definisi-sistem-persamaan-linier">
-<h1>Definisi Sistem Persamaan Linier<a class="headerlink" href="#definisi-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
-<section id="definisi-persamaan-linear">
-<h2><strong>1. Definisi Persamaan Linear</strong><a class="headerlink" href="#definisi-persamaan-linear" title="Link to this heading">#</a></h2>
-<p>Persamaan linear dalam <em>n</em> variabel (<em>unknown</em>, <em>anu</em>) (x_1, x_2, …, x_n) adalah persamaan yang memiliki bentuk umum:</p>
-<p>[
-a_1 x_1 + a_2 x_2 + … + a_n x_n = b
-]</p>
-<p>dengan (a_1, a_2, …, a_n, b) merupakan bilangan real, dan tidak semua (a_i) untuk (i = 1, 2, …, n) adalah nol.</p>
-<ul class="simple">
-<li><p><strong>Koefisien</strong>: Setiap bilangan (a_i) disebut sebagai koefisien variabel (x_i).</p></li>
-<li><p><strong>Suku Konstan</strong>: Bilangan (b) disebut sebagai suku konstan.</p></li>
-</ul>
-</section>
-<section id="contoh-sistem-persamaan-linear">
-<h2><strong>2. Contoh Sistem Persamaan Linear</strong><a class="headerlink" href="#contoh-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan linear terdiri dari beberapa persamaan linear yang melibatkan beberapa variabel. Berikut adalah contoh sistem persamaan linear dengan dua variabel:</p>
-<p>[
-\begin{cases}
-2x + 3y = 8 \
-5x - y = 3
-\end{cases}
-]</p>
-<p>Pada contoh di atas:</p>
-<ul class="simple">
-<li><p>(a_1 = 2, a_2 = 3, b = 8) untuk persamaan pertama.</p></li>
-<li><p>(a_1 = 5, a_2 = -1, b = 3) untuk persamaan kedua.</p></li>
-</ul>
-<p>Sistem ini dapat diselesaikan dengan berbagai metode seperti <strong>substitusi, eliminasi, matriks</strong>, atau metode numerik lainnya.</p>
-</section>
-<section id="implementasi-dalam-python">
-<h2><strong>3. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
-<p>Berikut adalah contoh kode Python untuk menyelesaikan sistem persamaan linear menggunakan <strong>NumPy</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Matriks koefisien</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
-<span class="c1"># Vektor hasil</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-
-<span class="c1"># Menyelesaikan sistem persamaan</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solusi: x =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, y =&quot;</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="solusi">
+<h1>Solusi<a class="headerlink" href="#solusi" title="Link to this heading">#</a></h1>
+<p>Sistem persamaan linier dapat memiliki <strong>satu solusi</strong>, <strong>tidak ada solusi</strong>, atau <strong>banyak solusi</strong>, tergantung pada hubungan antara garis-garis dalam sistem tersebut.</p>
+<section id="satu-solusi-sistem-konsisten-dan-independen">
+<h2>1. Satu Solusi (Sistem Konsisten dan Independen)<a class="headerlink" href="#satu-solusi-sistem-konsisten-dan-independen" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Terjadi ketika dua garis <strong>berpotongan di satu titik</strong>.</p></li>
+<li><p>Gradien (kemiringan) kedua garis <strong>berbeda</strong>, sehingga mereka tidak sejajar.</p></li>
+<li><p>Contoh:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+x - y = 2
 </pre></div>
 </div>
-<p>Kode di atas menggunakan <code class="docutils literal notranslate"><span class="pre">numpy.linalg.solve()</span></code> untuk menemukan solusi dari sistem persamaan linear secara langsung.</p>
-</section>
-<section id="kesimpulan">
-<h2><strong>4. Kesimpulan</strong><a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Persamaan linear</strong> adalah persamaan yang memiliki variabel dengan pangkat satu.</p></li>
-<li><p><strong>Sistem persamaan linear</strong> terdiri dari beberapa persamaan linear dengan beberapa variabel.</p></li>
-<li><p><strong>Metode penyelesaian</strong> dapat menggunakan metode aljabar seperti substitusi dan eliminasi, atau metode berbasis matriks dengan pemrograman.</p></li>
-<li><p><strong>Python (NumPy)</strong> dapat digunakan untuk menyelesaikan SPL dengan efisien.</p></li>
+</li>
+<li><p>Grafiknya menunjukkan dua garis yang berpotongan di satu titik.</p></li>
 </ul>
-<p>Dokumentasi ini dapat digunakan sebagai referensi dasar untuk memahami sistem persamaan linear dan implementasinya dalam pemrograman.</p>
+</section>
+<section id="tidak-ada-solusi-sistem-inkonisten">
+<h2>2. Tidak Ada Solusi (Sistem Inkonisten)<a class="headerlink" href="#tidak-ada-solusi-sistem-inkonisten" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Terjadi ketika dua garis <strong>sejajar tetapi tidak berpotongan</strong>.</p></li>
+<li><p>Kedua persamaan memiliki <strong>gradien yang sama</strong>, tetapi <strong>intersep (potongan sumbu y) berbeda</strong>.</p></li>
+<li><p>Contoh:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+2x + 3y = 10
+</pre></div>
+</div>
+</li>
+<li><p>Grafiknya menunjukkan dua garis sejajar yang tidak memiliki titik perpotongan.</p></li>
+</ul>
+</section>
+<section id="banyak-solusi-sistem-konsisten-dan-bergantung">
+<h2>3. Banyak Solusi (Sistem Konsisten dan Bergantung)<a class="headerlink" href="#banyak-solusi-sistem-konsisten-dan-bergantung" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Terjadi ketika dua persamaan mewakili <strong>garis yang sama</strong>.</p></li>
+<li><p>Satu persamaan merupakan <strong>kelipatan</strong> dari yang lain.</p></li>
+<li><p>Contoh:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 3y = 6
+4x + 6y = 12  \quad (\text{dibagi 2 menjadi } 2x + 3y = 6)
+</pre></div>
+</div>
+</li>
+<li><p>Grafiknya menunjukkan dua garis yang <strong>sama</strong>, sehingga memiliki <strong>tak hingga banyaknya solusi</strong>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -506,10 +493,9 @@ a_1 x_1 + a_2 x_2 + … + a_n x_n = b
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linear"><strong>1. Definisi Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan-linear"><strong>2. Contoh Sistem Persamaan Linear</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><strong>4. Kesimpulan</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi-sistem-konsisten-dan-independen">1. Satu Solusi (Sistem Konsisten dan Independen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-ada-solusi-sistem-inkonisten">2. Tidak Ada Solusi (Sistem Inkonisten)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#banyak-solusi-sistem-konsisten-dan-bergantung">3. Banyak Solusi (Sistem Konsisten dan Bergantung)</a></li>
 </ul>
   </nav></div>
 
