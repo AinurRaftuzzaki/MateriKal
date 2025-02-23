@@ -1,6 +1,5 @@
 # **Sistem Persamaan Linear (SPL)**
 
-## **Konsep Sistem Persamaan Linear (SPL)**
 Sistem Persamaan Linier (SPL) adalah kumpulan dari dua atau lebih persamaan linier yang memiliki satu atau lebih variabel yang harus dipenuhi secara bersamaan. Dalam SPL, kita mencari nilai variabel yang memenuhi semua persamaan dalam sistem tersebut.
 
 ## Bentuk Umum SPL
