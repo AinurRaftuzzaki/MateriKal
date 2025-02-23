@@ -68,23 +68,3 @@ x + 2y + 3z = 9
 z = -͟3͟2͟ = 3͟2͟
     −87   87
   ```
-
-## Metode Eliminasi Gauss-Jordan
-
-- Merupakan penyempurnaan dari metode eliminasi Gauss.
-- Mengubah sistem persamaan menjadi bentuk matriks eselon baris tereduksi (Reduced Row Echelon Form, RREF).
-- Penyelesaian diperoleh langsung tanpa perlu substitusi mundur.
-
-  ```math
-  2x + 3y = 6
-  x - y = 2
-  ```
-
-## Metode Eliminasi Matriks (Invers Matriks)
-
-- Jika sistem persamaan dapat dituliskan dalam bentuk matriks AX = B, maka solusi dapat ditemukan dengan X = A⁻¹B, asalkan matriks A memiliki invers.
-
-  ```math
-  2x + 3y = 6
-  x - y = 2
-  ```
