@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Komputasi Aljabar Linier &#8212; My sample book</title>
+    <title>Definisi Sistem Persamaan Linier &#8212; My sample book</title>
   
   
   
@@ -176,7 +176,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Komputasi Aljabar Linier
+                    Definisi Sistem Persamaan Linier
                 </a>
             </li>
         </ul>
@@ -369,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Komputasi Aljabar Linier</h1>
+    <h1>Definisi Sistem Persamaan Linier</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,15 +379,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan"><strong>1. Pendahuluan</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-dasar"><strong>2. Konsep Dasar</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-dan-operasinya"><strong>2.1. Vektor dan Operasinya</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dan-operasinya"><strong>2.2. Matriks dan Operasinya</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-spl"><strong>2.3. Sistem Persamaan Linear (SPL)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsur-unsur-dalam-persamaan-linear"><strong>Unsur-Unsur Dalam Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable">Variable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#koefisien">Koefisien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konstanta">Konstanta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suku">Suku</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-dalam-dunia-nyata"><strong>4. Aplikasi dalam Dunia Nyata</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear"><strong>Jenis-Jenis Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-satu-variabel">Persamaan Linear Satu Variabel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-dua-variabel">Persamaan Linear Dua Variabel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-tiga-variabel">Persamaan Linear Tiga Variabel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-persamaan-linear"><strong>Metode Penyelesaian Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">Metode Eliminasi</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -399,84 +407,90 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="komputasi-aljabar-linier">
-<h1><strong>Komputasi Aljabar Linier</strong><a class="headerlink" href="#komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<section id="pendahuluan">
-<h2><strong>1. Pendahuluan</strong><a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
-<p>Aljabar linier adalah cabang matematika yang berkaitan dengan vektor, matriks, dan sistem persamaan linier. Dalam komputasi, aljabar linier digunakan dalam berbagai bidang seperti kecerdasan buatan, grafik komputer, optimasi, dan pemrosesan sinyal.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="definisi-sistem-persamaan-linier">
+<h1><strong>Definisi Sistem Persamaan Linier</strong><a class="headerlink" href="#definisi-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<p>Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.</p>
+<p>Persamaan tersebut disebut linear karena ada hubungan  matematis yang digambarkan sebagai garis lurus dalam sistem koordinat Kartesius. Sistem koordinat tersebut akan menetapkan setiap titik secara unik dalam bidang dengan serangkaian koordinat numerik.</p>
+<p>Selain itu persamaan linear juga bisa kita artikan sebagai persamaan yang memiliki pangkat tertinggi dari variabelnya selalu satu. Persamaan linear juga kerap disebut sebagai persamaan satu derajat. Dalam persamaan linear akan ada beberapa hal penting seperti variable, koefisien dan juga constant</p>
+<p><strong>Ciri-Ciri Persamaan Linear</strong></p>
+<p>Dalam persamaan linear memiliki ciri-ciri tertentu. Akan lebih mudah mengetahui ciri tersebut jika melihat langsung dari soal persamaan linear. Namun beberapa ciri yang ada di bawah ini juga akan memantu kalian lebih memahami persamaan linear.</p>
+<ol class="arabic simple">
+<li><p>Persamaan linear akan memiliki pangkat satu.</p></li>
+<li><p>Persamaan linear tidak memiliki perkalian variabel.</p></li>
+<li><p>Persamaan linear biasanya akan terdiri dari dua ruas yang akan dihubungkan dengan tanda sama dengan (=).</p></li>
+<li><p>Penjumlahan, pengurangan, perkalian dan pembagian pada kedua ruas persamaan linear tidak akan mengubah bentuk nilai persamaan.</p></li>
+</ol>
+<section id="unsur-unsur-dalam-persamaan-linear">
+<h2><strong>Unsur-Unsur Dalam Persamaan Linear</strong><a class="headerlink" href="#unsur-unsur-dalam-persamaan-linear" title="Link to this heading">#</a></h2>
+<p>Dalam proses penyelesaiannya, persamaan linear akan menggunakan rumus-rumus tertentu. Dalam rumus persamaan linear tersebut akan memiliki beberapa unsur penting. Pada penjelasan sebelumnya beberapa unsur dalam penyelesaian persamaan linear sudah dijelaskan secara singkat.</p>
+<section id="variable">
+<h3>Variable<a class="headerlink" href="#variable" title="Link to this heading">#</a></h3>
+<p>Variabel dalam persamaan linear bisa diartikan sebagai penambah atau pengganti suatu bilangan yang pada dasarnya belum diketahui besaran nilai secara jelas. Variable sendiri kebanyak akan disimbolkan menggunakan huruf, misalnya seperti a, b, c, …, x, y, z.</p>
 </section>
-<section id="konsep-dasar">
-<h2><strong>2. Konsep Dasar</strong><a class="headerlink" href="#konsep-dasar" title="Link to this heading">#</a></h2>
-<section id="vektor-dan-operasinya">
-<h3><strong>2.1. Vektor dan Operasinya</strong><a class="headerlink" href="#vektor-dan-operasinya" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Penjumlahan dan Pengurangan Vektor</p></li>
-<li><p>Perkalian Skalar</p></li>
-<li><p>Norma dan Jarak Euclidean</p></li>
-</ul>
+<section id="koefisien">
+<h3>Koefisien<a class="headerlink" href="#koefisien" title="Link to this heading">#</a></h3>
+<p>Koefisien adalah suatu bilangan yang dapat menjelaskan banyaknya jumlah variabel sejenis. Keberadaan koefisien sendiri akan berada di depan variable. Sebagai contohnya adalah pada soal 2 pensil dan 4 spidol dapat dituliskan dalam persamaan seperti: Pensil = x , spidol = y.</p>
 </section>
-<section id="matriks-dan-operasinya">
-<h3><strong>2.2. Matriks dan Operasinya</strong><a class="headerlink" href="#matriks-dan-operasinya" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Penjumlahan dan Pengurangan Matriks</p></li>
-<li><p>Perkalian Matriks</p></li>
-<li><p>Determinan dan Invers Matriks</p></li>
-</ul>
+<section id="konstanta">
+<h3>Konstanta<a class="headerlink" href="#konstanta" title="Link to this heading">#</a></h3>
+<p>Ada juga unsur konstanta dalam persamaan linear. Dimana konstanta adalah suatu nilai yang konstan yang tidak diikuti oleh variable pada bagian belakang. Sebagai contohnya adalah pada soal persamaan 2x + 5y + 7. Angka 7 pada soal persamaan tersebut adalah bentuk konstanta. Hal ini tak lain karena tidak ada variable apapun di bagian belakang angka 7.</p>
 </section>
-<section id="sistem-persamaan-linear-spl">
-<h3><strong>2.3. Sistem Persamaan Linear (SPL)</strong><a class="headerlink" href="#sistem-persamaan-linear-spl" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Representasi Matriks dari SPL</p></li>
-<li><p>Penyelesaian SPL dengan Eliminasi Gauss</p></li>
-<li><p>Penyelesaian SPL menggunakan metode Matriks Invers</p></li>
-<li><p>Penyelesaian SPL menggunakan <strong>NumPy</strong> di Python</p></li>
-</ul>
+<section id="suku">
+<h3>Suku<a class="headerlink" href="#suku" title="Link to this heading">#</a></h3>
+<p>Suku adalah bagian dari bentuk persamaan. Suku akan terdiri beberapa unsur penting persamaan linear, mulai dari koefisien, variable dan juga konstanta. Sebagai contohnya pada soal persamaan 7x-y+4. Suku dari soal persamaan tersebut adalah 6x, -y, 4.</p>
 </section>
 </section>
-<section id="implementasi-dalam-python">
-<h2><strong>3. Implementasi dalam Python</strong><a class="headerlink" href="#implementasi-dalam-python" title="Link to this heading">#</a></h2>
-<p>Berikut adalah contoh implementasi beberapa operasi aljabar linier menggunakan <strong>NumPy</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Definisi Vektor</span>
-<span class="n">v1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
-
-<span class="c1"># Operasi Vektor</span>
-<span class="n">penjumlahan</span> <span class="o">=</span> <span class="n">v1</span> <span class="o">+</span> <span class="n">v2</span>
-<span class="n">perkalian_skalar</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">v1</span>
-<span class="n">norma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Penjumlahan Vektor:&quot;</span><span class="p">,</span> <span class="n">penjumlahan</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Perkalian Skalar:&quot;</span><span class="p">,</span> <span class="n">perkalian_skalar</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Norma Vektor:&quot;</span><span class="p">,</span> <span class="n">norma</span><span class="p">)</span>
-
-<span class="c1"># Definisi Matriks</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
-
-<span class="c1"># Operasi Matriks</span>
-<span class="n">perkalian_matriks</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="n">determinan_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="n">invers_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Perkalian Matriks:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">perkalian_matriks</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan A:&quot;</span><span class="p">,</span> <span class="n">determinan_A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invers A:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">invers_A</span><span class="p">)</span>
+<section id="jenis-jenis-persamaan-linear">
+<h2><strong>Jenis-Jenis Persamaan Linear</strong><a class="headerlink" href="#jenis-jenis-persamaan-linear" title="Link to this heading">#</a></h2>
+<p>Persamaan linear dibagi menjadi beberapa jenis. Dimana ada tiga jenis persamaan linear, mulai dari persamaan linear satu variabel, persamaan linear dua variabel dan persamaan linear tiga variabel. Namun  jika ditulis dalam  matematik, persamaan linier secara umum adalah y = mx + b.</p>
+<section id="persamaan-linear-satu-variabel">
+<h3>Persamaan Linear Satu Variabel<a class="headerlink" href="#persamaan-linear-satu-variabel" title="Link to this heading">#</a></h3>
+<p>Persamaan linear satu variabel adalah salah satu jenis persamaan linear. Seperti dengan namanya, persamaan linear satu variabel tersebut akan memiliki satu variabel dengan pangkat 1 dalam bentuk kalimat terbuka dan dapat dihubungkan dengan tanda =.
+Secara umum bentuk persamaan linear satu variabel jika dituliskan secara matematik adalah seperti berikut ini.</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>ax + b = 0
+</pre></div>
+</div>
+<p>Keterangan:
+a = koefisien
+b = konstanta
+x = variable</p>
+</section>
+<section id="persamaan-linear-dua-variabel">
+<h3>Persamaan Linear Dua Variabel<a class="headerlink" href="#persamaan-linear-dua-variabel" title="Link to this heading">#</a></h3>
+<p>Selanjutnya, ada persamaan linear dua variabel yang juga menjadi salah satu jenis persamaan linear. Persamaan linear dua variabel ini adalah sistem persamaan yang memiliki variabel berjumlah dua dengan pangkat 1. Persamaan linear dua variabel tersebut akan menggunakan relasi = dan tidak akan menggunakan perkalian variabel pada setiap persamaan.
+Secara matematis, persamaan linear dua variabel bisa dituliskan seperti yang ada di bawah ini:</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>ax + by = c
 </pre></div>
 </div>
 </section>
-<section id="aplikasi-dalam-dunia-nyata">
-<h2><strong>4. Aplikasi dalam Dunia Nyata</strong><a class="headerlink" href="#aplikasi-dalam-dunia-nyata" title="Link to this heading">#</a></h2>
-<p>Aljabar linier memiliki banyak aplikasi dalam berbagai bidang seperti:</p>
-<ul class="simple">
-<li><p><strong>Pembelajaran Mesin &amp; AI</strong>: Representasi data, transformasi fitur, regresi linier</p></li>
-<li><p><strong>Grafik Komputer</strong>: Transformasi 2D dan 3D</p></li>
-<li><p><strong>Optimasi</strong>: Pemodelan linear programming</p></li>
-<li><p><strong>Pemrosesan Citra</strong>: Filter dan transformasi gambar</p></li>
-</ul>
+<section id="persamaan-linear-tiga-variabel">
+<h3>Persamaan Linear Tiga Variabel<a class="headerlink" href="#persamaan-linear-tiga-variabel" title="Link to this heading">#</a></h3>
+<p>Lalu masih ada persamaan persamaan linear tiga variabel yang juga merupakan jenis persamaan linear. Secara mudahnya persamaan linear tiga variabel ini adalah bentuk perluasan dari persamaan linier dua variabel.</p>
+<p>Dimana untuk menyelesaikan persamaan linear tiga variabel ini bisa dilakukan dengan dua cara yaitu menggunakan metode subtitusi dan metode eliminasi. Sistem persamaan linear tiga variabel ini akan menentukan titik potong.
+Secara umum penulisan persamaan linear tiga variabel adalah sebagai berikut.</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>ax + by + cy = d
+</pre></div>
+</div>
 </section>
-<hr class="docutils" />
+</section>
+<section id="metode-penyelesaian-persamaan-linear">
+<h2><strong>Metode Penyelesaian Persamaan Linear</strong><a class="headerlink" href="#metode-penyelesaian-persamaan-linear" title="Link to this heading">#</a></h2>
+<p>Pada bagian jenis persamaan linear ada beberapa metode yang bisa digunakan untuk menyelesaikan soal persamaan. Dimana metode-metode tersebut adalah seperti metode subtitusi dan metode persamaan.</p>
+<p>###Metode Substitusi</p>
+<p>Metode substitusi adalah salah satu cara untuk menyelesaikan soal mengenai persamaan linear dua variabel atau tiga variabel. Dimana nantinya ketika menggunakan metode substitusi ini akan mengubah suatu variabel dengan variabel dari persamaan lainnya.</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 4y = 28
+3x + 2y = 22
+</pre></div>
+</div>
+<section id="metode-eliminasi">
+<h3>Metode Eliminasi<a class="headerlink" href="#metode-eliminasi" title="Link to this heading">#</a></h3>
+<p>Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.</p>
+<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>x + 2y = 20
+2x + 3y = 33
+</pre></div>
+</div>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -536,15 +550,23 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan"><strong>1. Pendahuluan</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-dasar"><strong>2. Konsep Dasar</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-dan-operasinya"><strong>2.1. Vektor dan Operasinya</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dan-operasinya"><strong>2.2. Matriks dan Operasinya</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-spl"><strong>2.3. Sistem Persamaan Linear (SPL)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsur-unsur-dalam-persamaan-linear"><strong>Unsur-Unsur Dalam Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable">Variable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#koefisien">Koefisien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konstanta">Konstanta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suku">Suku</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dalam-python"><strong>3. Implementasi dalam Python</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-dalam-dunia-nyata"><strong>4. Aplikasi dalam Dunia Nyata</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear"><strong>Jenis-Jenis Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-satu-variabel">Persamaan Linear Satu Variabel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-dua-variabel">Persamaan Linear Dua Variabel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-tiga-variabel">Persamaan Linear Tiga Variabel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-persamaan-linear"><strong>Metode Penyelesaian Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">Metode Eliminasi</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
