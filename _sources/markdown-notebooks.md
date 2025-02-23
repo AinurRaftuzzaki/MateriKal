@@ -46,28 +46,27 @@ x + 2y + 3z = 9
 ```
 **Matriks Augmented:**
 ```math
-\begin{bmatrix} 1 & 2 & 3 & |9 \\
-                 2 & 3 & 1 & |4 \\
-                 3 & 1 & 2 & |10 \end{bmatrix}
+ |1 2 3 9 |
+ |2 3 1 4 |
+ |3 1 2 10|
 ```
 **Langkah-langkah:**
 1. Eliminasi `x`:
 ```math
-\begin{bmatrix} 1 & 2 & 3 & |9 \\
-                 0 & -1 & -5 & |-14 \\
-                 0 & -5 & -7 & |-17 \end{bmatrix}
+ |1   2   3   9 |
+ |0  -1  -5 -14 |
+ |0  -5  -7 -17 |
 ```
 2. Eliminasi `y`:
 ```math
-\begin{bmatrix} 1 & 2 & 3 & |9 \\
-                 0 & -1 & -5 & |-14 \\
-                 0 & 0 & -32 & |-87 \end{bmatrix}
+ |1  2  3    9 |
+ |0 -1 -5  -14 |
+ |0  0 -32 -87 |
 ```
 3. Substitusi mundur:
 ```math
-z = \frac{-87}{-32} = \frac{87}{32}
-```
-
+z = -͟3͟2͟ = 3͟2͟
+    −87   87
   ```
 
 ## Metode Eliminasi Gauss-Jordan
