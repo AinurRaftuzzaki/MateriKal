@@ -1,6 +1,7 @@
 # **Solusi**
 
 Persamaan linier dalam dua variabel dapat memiliki satu solusi, tidak ada solusi, atau banyak solusi, tergantung pada bagaimana garis-garis yang diwakili oleh persamaan tersebut berinteraksi satu sama lain di dalam bidang koordinat. Jika dua garis berpotongan di satu titik, maka sistem memiliki satu solusi unik, yang berarti ada satu nilai pasangan \((x, y)\) yang memenuhi kedua persamaan. Namun, jika kedua garis sejajar dan tidak pernah berpotongan, maka sistem tidak memiliki solusi karena tidak ada titik yang memenuhi kedua persamaan secara bersamaan. Sementara itu, jika kedua persamaan sebenarnya merepresentasikan garis yang sama, maka ada tak hingga banyak solusi, karena setiap titik pada garis tersebut memenuhi kedua persamaan. Oleh karena itu, jumlah solusi dari sistem persamaan linier bergantung pada kemiringan dan posisi relatif garis-garis yang diwakilinya.
+
 **M₁ ≠ M₂**, yang berarti garis-garis tersebut berpotongan pada satu titik. Kasus ini menghasilkan tepat satu solusi - titik perpotongan.
 
 **M₁ = M₂** dan **B₁ ≠ B₂**, artinya keduanya sejajar tetapi tidak saling tumpang tindih. Kasus ini tidak menghasilkan solusi.
