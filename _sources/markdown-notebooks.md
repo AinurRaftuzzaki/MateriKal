@@ -1,7 +1,11 @@
 # Solusi
 Sistem persamaan linier dapat memiliki **satu solusi**, **tidak ada solusi**, atau **banyak solusi**, tergantung pada hubungan antara garis-garis dalam sistem tersebut.
 
-**M₁ = M₂** dan **B₁ ≠ B₂**
+**M₁ ≠ M₂**, yang berarti garis-garis tersebut berpotongan pada satu titik. Kasus ini menghasilkan tepat satu solusi - titik perpotongan.
+
+**M₁ = M₂** dan **B₁ ≠ B₂**, artinya keduanya sejajar tetapi tidak saling tumpang tindih. Kasus ini tidak menghasilkan solusi.
+
+**M₁ = M₂** dan **B₁ = B₂**, yang berarti kedua garis tersebut saling tumpang tindih. Karena keduanya saling tumpang tindih di setiap titik pada garis, maka setiap titik pada garis tersebut merupakan solusi, dan jumlahnya tak terhingga!
 
 ## 1. Satu Solusi (Sistem Konsisten dan Independen)
 - Terjadi ketika dua garis **berpotongan di satu titik**.
