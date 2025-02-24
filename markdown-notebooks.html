@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -379,6 +381,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-substitusi">Metode Eliminasi Substitusi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 </ul>
             </nav>
         </div>
@@ -474,6 +477,111 @@ y = 4/3
 </pre></div>
 </div>
 </section>
+<section id="eliminasi-gauss">
+<h2>Eliminasi Gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>contoh soal:
+selesaikan dengan menggunakan Eliminasi Gauss</p>
+<p><strong>Contoh Nomor 1</strong>
+selesaikan dengan menggunakan Eliminasi Gauss
+$<span class="math notranslate nohighlight">\(
+\begin{array}{cc}
+x_1+2x_2+3x_3=6\\
+2x_1+4x_2+6x_3=12\\
+x_2+x_3=2
+\end{array}
+\)</span>$
+Matriks augmented:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | 6 \
+2 &amp; 4 &amp; 6 &amp; | 12 \
+0 &amp; -1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Baris kedua dikurangi 2 kali baris pertama:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | 6 \
+0 &amp; 0 &amp; 0 &amp; | 0 \
+0 &amp; -1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
+Variabel bebas: , maka
+$<span class="math notranslate nohighlight">\(
+x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10.
+\)</span>$
+\begin{aligned}
+x_1 &amp;= -5t + 10, \
+x_2 &amp;= t - 2, \
+x_3 &amp;= t, \quad t \in \mathbb{R}.
+\end{aligned}</p>
+<p><strong>Contoh Nomor 2</strong>
+selesaikan dengan menggunakna Eliminasi Gauss
+$<span class="math notranslate nohighlight">\(
+\begin{array}{cc}
+x_1+x_2+x_3=3\\
+2x_1+x_3=5\\
+x_1=2x_2=3\\
+\end{array}
+\)</span>$</p>
+<p><strong>Contoh Nomor 3</strong>
+selesaikan dengan menggunakna Eliminasi Gauss
+$<span class="math notranslate nohighlight">\(
+\begin{array}{cc}
+2x_1+2x_2=4\\
+x_1+x_2=2\\
+\end{array}
+\)</span>$</p>
+<p>Matriks augmented:</p>
+<p>\begin{bmatrix}
+2 &amp; 2 &amp; | Y \
+1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Eliminasi dengan membagi baris pertama dengan 2:</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; | \frac{Y}{2} \
+1 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Kurangi baris kedua dengan baris pertama:</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; | \frac{Y}{2} \
+0 &amp; 0 &amp; | 2 - \frac{Y}{2}
+\end{bmatrix}</p>
+<p>Jika , baris kedua menjadi , sehingga ada solusi tak hingga:</p>
+<p>x_1 = 2 - x_2.</p>
+<p><strong>Contoh Nomor 4</strong>
+selesaikan dengan menggunakna Eliminasi Gauss
+$<span class="math notranslate nohighlight">\(
+\begin{array}{cc}
+x_1+x_2=5\\
+x_1+2x_3=6\\
+\end{array}
+\)</span>$
+bentuk matriks:
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp;|5 \
+1 &amp; 0 &amp; 2 &amp;|6
+\end{bmatrix}</p>
+<p>Operasi Baris Elementer:
+\begin{bmatrix}
+1 &amp; 1 &amp; 0  &amp;|5\
+0 &amp; -1 &amp; 2 &amp;|1
+\end{bmatrix}</p>
+<p>Elemen Pivot pada Baris Kedua Menjadi 1:
+\begin{bmatrix}
+1 &amp; 0 &amp; 2  &amp;|5\
+0 &amp; 1 &amp; -2 &amp;|-1
+\end{bmatrix}</p>
+<p>Elemen di Atas Pivot pada Baris Kedua:
+\begin{bmatrix}
+1 &amp; 0 &amp; 2  &amp;|6\
+0 &amp; 1 &amp; -2 &amp;|-1
+\end{bmatrix}</p>
+<p>sistem persamaan:
+$<span class="math notranslate nohighlight">\(
+\begin{array}{cc}
+x_1=6-2x_3\\
+x_2=-1+2x_3\\
+\end{array}
+\)</span>$</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -533,6 +641,7 @@ y = 4/3
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-substitusi">Metode Eliminasi Substitusi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi-gauss">Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 </ul>
   </nav></div>
 

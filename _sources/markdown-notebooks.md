@@ -68,3 +68,128 @@ x + 2y + 3z = 9
 z = -͟3͟2͟ = 3͟2͟
     −87   87
   ```
+
+  ## Eliminasi Gauss
+
+contoh soal:
+selesaikan dengan menggunakan Eliminasi Gauss
+
+**Contoh Nomor 1**
+selesaikan dengan menggunakan Eliminasi Gauss
+$$
+\begin{array}{cc}
+x_1+2x_2+3x_3=6\\
+2x_1+4x_2+6x_3=12\\
+x_2+x_3=2
+\end{array}
+$$
+ Matriks augmented:
+
+\begin{bmatrix}
+1 & 2 & 3 & | 6 \\
+2 & 4 & 6 & | 12 \\
+0 & -1 & 1 & | 2
+\end{bmatrix}
+
+Baris kedua dikurangi 2 kali baris pertama:
+
+\begin{bmatrix}
+1 & 2 & 3 & | 6 \\
+0 & 0 & 0 & | 0 \\
+0 & -1 & 1 & | 2
+\end{bmatrix}
+
+Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
+Variabel bebas: , maka
+$$
+x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10.
+$$
+\begin{aligned}
+x_1 &= -5t + 10, \\
+x_2 &= t - 2, \\
+x_3 &= t, \quad t \in \mathbb{R}.
+\end{aligned}
+
+**Contoh Nomor 2**
+selesaikan dengan menggunakna Eliminasi Gauss
+$$
+\begin{array}{cc}
+x_1+x_2+x_3=3\\
+2x_1+x_3=5\\
+x_1=2x_2=3\\
+\end{array}
+$$
+
+**Contoh Nomor 3**
+selesaikan dengan menggunakna Eliminasi Gauss
+$$
+\begin{array}{cc}
+2x_1+2x_2=4\\
+x_1+x_2=2\\
+\end{array}
+$$
+
+Matriks augmented:
+
+\begin{bmatrix}
+2 & 2 & | Y \\
+1 & 1 & | 2
+\end{bmatrix}
+
+Eliminasi dengan membagi baris pertama dengan 2:
+
+\begin{bmatrix}
+1 & 1 & | \frac{Y}{2} \\
+1 & 1 & | 2
+\end{bmatrix}
+
+Kurangi baris kedua dengan baris pertama:
+
+\begin{bmatrix}
+1 & 1 & | \frac{Y}{2} \\
+0 & 0 & | 2 - \frac{Y}{2}
+\end{bmatrix}
+
+Jika , baris kedua menjadi , sehingga ada solusi tak hingga:
+
+x_1 = 2 - x_2.
+
+**Contoh Nomor 4**
+selesaikan dengan menggunakna Eliminasi Gauss
+$$
+\begin{array}{cc}
+x_1+x_2=5\\
+x_1+2x_3=6\\
+\end{array}
+$$
+bentuk matriks:
+\begin{bmatrix}
+   1 & 1 & 0 &|5 \\
+   1 & 0 & 2 &|6
+   \end{bmatrix}
+
+Operasi Baris Elementer:
+\begin{bmatrix}
+   1 & 1 & 0  &|5\\
+   0 & -1 & 2 &|1
+   \end{bmatrix}
+
+Elemen Pivot pada Baris Kedua Menjadi 1:
+\begin{bmatrix}
+   1 & 0 & 2  &|5\\
+   0 & 1 & -2 &|-1
+   \end{bmatrix}
+
+Elemen di Atas Pivot pada Baris Kedua:
+\begin{bmatrix}
+   1 & 0 & 2  &|6\\
+   0 & 1 & -2 &|-1
+   \end{bmatrix}
+
+sistem persamaan:
+$$
+\begin{array}{cc}
+x_1=6-2x_3\\
+x_2=-1+2x_3\\
+\end{array}
+$$
