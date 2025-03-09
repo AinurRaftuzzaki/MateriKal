@@ -185,8 +185,6 @@
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html"><strong>Solusi Persamaan Linier</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html"><strong>Eliminasi Persamaan Linier</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Matriks</strong></a></li>
-
-
 </ul>
 
     </div>
@@ -382,7 +380,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Matriks</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengenalan-matriks"><strong>Pengenalan Matriks</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-matriks"><strong>Jenis-jenis Matriks</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol"><strong>1. Matriks Nol</strong></a></li>
@@ -397,21 +394,14 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matriks"><strong>Operasi Matriks</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">1. <strong>Penjumlahan Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. <strong>Perkalian Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">3. <strong>Transpose Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan">4. <strong>Determinan</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-matriks">5. <strong>Invers Matriks</strong></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penjumlahan matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. <strong>Perkalian Matriks</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">3. <strong>Transpose Matriks</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan">4. <strong>Determinan</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-matriks">5. <strong>Invers Matriks</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal"><strong>Contoh Soal</strong></a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -552,22 +542,9 @@ document.write(`
    6 &amp; 8 \\
    10 &amp; 12
    \end{pmatrix} \end{split}\]</div>
-<p>import numpy as np</p>
 </section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="definisi-matriks">
-<h1>Definisi matriks<a class="headerlink" href="#definisi-matriks" title="Link to this heading">#</a></h1>
-<p>A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Penjumlahan matriks<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>C = A + B</p>
-<p>print(“Hasil Penjumlahan Matriks:”)
-print(C)</p>
 <section id="perkalian-matriks">
-<h2>2. <strong>Perkalian Matriks</strong><a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h2>
+<h3>2. <strong>Perkalian Matriks</strong><a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h3>
 <p>Perkalian dua matriks ( A ) dan ( B ) dapat dilakukan jika jumlah kolom matriks ( A ) sama dengan jumlah baris matriks ( B ).</p>
 <p>Contoh:</p>
 <div class="math notranslate nohighlight">
@@ -587,7 +564,7 @@ print(C)</p>
    \end{pmatrix} \end{split}\]</div>
 </section>
 <section id="transpose-matriks">
-<h2>3. <strong>Transpose Matriks</strong><a class="headerlink" href="#transpose-matriks" title="Link to this heading">#</a></h2>
+<h3>3. <strong>Transpose Matriks</strong><a class="headerlink" href="#transpose-matriks" title="Link to this heading">#</a></h3>
 <p>Transpose matriks ( A ) (ditulis ( A^T )) adalah matriks yang baris dan kolomnya dipertukarkan.</p>
 <p>Contoh:</p>
 <div class="math notranslate nohighlight">
@@ -601,7 +578,7 @@ print(C)</p>
    \end{pmatrix} \end{split}\]</div>
 </section>
 <section id="determinan">
-<h2>4. <strong>Determinan</strong><a class="headerlink" href="#determinan" title="Link to this heading">#</a></h2>
+<h3>4. <strong>Determinan</strong><a class="headerlink" href="#determinan" title="Link to this heading">#</a></h3>
 <p>Determinan adalah nilai skalar yang dapat dihitung dari matriks persegi.</p>
 <p>Contoh:</p>
 <div class="math notranslate nohighlight">
@@ -612,7 +589,7 @@ print(C)</p>
    = (1 \cdot 4) - (2 \cdot 3) = -2 \end{split}\]</div>
 </section>
 <section id="invers-matriks">
-<h2>5. <strong>Invers Matriks</strong><a class="headerlink" href="#invers-matriks" title="Link to this heading">#</a></h2>
+<h3>5. <strong>Invers Matriks</strong><a class="headerlink" href="#invers-matriks" title="Link to this heading">#</a></h3>
 <p>Invers matriks ( A ) (ditulis ( A^{-1} )) adalah matriks yang jika dikalikan dengan ( A ) menghasilkan matriks identitas.</p>
 <p>Contoh:</p>
 <div class="math notranslate nohighlight">
@@ -624,6 +601,7 @@ print(C)</p>
    -2 &amp; 1 \\
    1.5 &amp; -0.5
    \end{pmatrix} \end{split}\]</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="contoh-soal">
@@ -720,7 +698,6 @@ print(C)</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Matriks</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengenalan-matriks"><strong>Pengenalan Matriks</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-matriks"><strong>Jenis-jenis Matriks</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol"><strong>1. Matriks Nol</strong></a></li>
@@ -735,21 +712,14 @@ print(C)</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matriks"><strong>Operasi Matriks</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">1. <strong>Penjumlahan Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. <strong>Perkalian Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">3. <strong>Transpose Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan">4. <strong>Determinan</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-matriks">5. <strong>Invers Matriks</strong></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penjumlahan matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">2. <strong>Perkalian Matriks</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">3. <strong>Transpose Matriks</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan">4. <strong>Determinan</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-matriks">5. <strong>Invers Matriks</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal"><strong>Contoh Soal</strong></a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
