@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Definisi Sistem Persamaan Linier &#8212; My sample book</title>
+    <title>Matriks &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan Linear (SPL)" href="markdown.html" />
+    <link rel="prev" title="Eliminasi Persamaan Linier" href="markdown-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,17 +174,17 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Definisi Sistem Persamaan Linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html"><strong>Sistem Persamaan Linear (SPL)</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html"><strong>Solusi Persamaan Linier</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html"><strong>Eliminasi Persamaan Linier</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Matriks.html"><strong>Matriks</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Matriks</strong></a></li>
 </ul>
 
     </div>
@@ -258,7 +256,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FMatriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +286,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Matriks.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -298,7 +296,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -372,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Definisi Sistem Persamaan Linier</h1>
+    <h1>Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,23 +380,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsur-unsur-dalam-persamaan-linear"><strong>Unsur-Unsur Dalam Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable">Variable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#koefisien">Koefisien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konstanta">Konstanta</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suku">Suku</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengenalan-matriks"><strong>Pengenalan Matriks</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-matriks"><strong>Jenis-jenis Matriks</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol"><strong>1. Matriks Nol</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-baris"><strong>2. Matriks Baris</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-kolom"><strong>3. Matriks Kolom</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-persegi"><strong>4. Matriks Persegi</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-diagonal"><strong>5. Matriks Diagonal</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-segitiga-atas"><strong>6. Matriks Segitiga Atas</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-segitiga-bawah"><strong>7. Matriks Segitiga Bawah</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-identitas"><strong>8. Matriks Identitas</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear"><strong>Jenis-Jenis Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-satu-variabel">Persamaan Linear Satu Variabel</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-dua-variabel">Persamaan Linear Dua Variabel</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-tiga-variabel">Persamaan Linear Tiga Variabel</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-persamaan-linear"><strong>Metode Penyelesaian Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">Metode Eliminasi</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matriks"><strong>Operasi Matriks</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal"><strong>Contoh Soal</strong></a></li>
 </ul>
             </nav>
         </div>
@@ -410,92 +405,224 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="definisi-sistem-persamaan-linier">
-<h1><strong>Definisi Sistem Persamaan Linier</strong><a class="headerlink" href="#definisi-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
-<p>Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.</p>
-<p>Persamaan tersebut disebut linear karena ada hubungan  matematis yang digambarkan sebagai garis lurus dalam sistem koordinat Kartesius. Sistem koordinat tersebut akan menetapkan setiap titik secara unik dalam bidang dengan serangkaian koordinat numerik.</p>
-<p>Selain itu persamaan linear juga bisa kita artikan sebagai persamaan yang memiliki pangkat tertinggi dari variabelnya selalu satu. Persamaan linear juga kerap disebut sebagai persamaan satu derajat. Dalam persamaan linear akan ada beberapa hal penting seperti variable, koefisien dan juga constant</p>
-<p><strong>Ciri-Ciri Persamaan Linear</strong></p>
-<p>Dalam persamaan linear memiliki ciri-ciri tertentu. Akan lebih mudah mengetahui ciri tersebut jika melihat langsung dari soal persamaan linear. Namun beberapa ciri yang ada di bawah ini juga akan memantu kalian lebih memahami persamaan linear.</p>
-<ol class="arabic simple">
-<li><p>Persamaan linear akan memiliki pangkat satu.</p></li>
-<li><p>Persamaan linear tidak memiliki perkalian variabel.</p></li>
-<li><p>Persamaan linear biasanya akan terdiri dari dua ruas yang akan dihubungkan dengan tanda sama dengan (=).</p></li>
-<li><p>Penjumlahan, pengurangan, perkalian dan pembagian pada kedua ruas persamaan linear tidak akan mengubah bentuk nilai persamaan.</p></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="matriks">
+<h1><strong>Matriks</strong><a class="headerlink" href="#matriks" title="Link to this heading">#</a></h1>
+<section id="pengenalan-matriks">
+<h2><strong>Pengenalan Matriks</strong><a class="headerlink" href="#pengenalan-matriks" title="Link to this heading">#</a></h2>
+<p>Matriks adalah susunan bilangan-bilangan, simbol, atau ekspresi matematika yang disusun dalam bentuk persegi panjang. Susunan ini diatur dalam baris dan kolom, dan biasanya dibatasi oleh tanda kurung (baik kurung biasa “()” atau kurung siku “[]”). Setiap bilangan atau elemen dalam matriks disebut sebagai <strong>elemen matriks</strong> atau <strong>unsur matriks</strong>.</p>
+<ul class="simple">
+<li><p><strong>Baris</strong> adalah susunan bilangan-bilangan yang disusun secara mendatar (horizontal). Misalnya, dalam matriks berordo ( 2 \times 3 ), terdapat 2 baris yang masing-masing terdiri dari 3 elemen.</p></li>
+<li><p><strong>Kolom</strong> adalah susunan bilangan-bilangan yang disusun secara tegak (vertikal). Pada matriks yang sama, terdapat 3 kolom yang masing-masing terdiri dari 2 elemen.</p></li>
+</ul>
+<p><strong>Ordo matriks</strong> adalah ukuran matriks yang dinyatakan dalam bentuk ( m \times n ), di mana:</p>
+<ul class="simple">
+<li><p>( m ) adalah banyaknya baris,</p></li>
+<li><p>( n ) adalah banyaknya kolom.</p></li>
+</ul>
+<p>Contoh:
+<br />
+$<span class="math notranslate nohighlight">\( A = \begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+4 &amp; 5 &amp; 6
+\end{pmatrix} \)</span>$
+<br />
+Matriks ( A ) di atas memiliki:</p>
+<ul class="simple">
+<li><p>2 baris (baris pertama: 1, 2, 3; baris kedua: 4, 5, 6),</p></li>
+<li><p>3 kolom (kolom pertama: 1, 4; kolom kedua: 2, 5; kolom ketiga: 3, 6),</p></li>
+<li><p>sehingga ordo matriks ( A ) adalah ( 2 \times 3 ).</p></li>
+</ul>
+<p>Matriks memiliki peran penting dalam berbagai bidang, seperti matematika, fisika, ilmu komputer, dan ekonomi. Mereka digunakan untuk menyelesaikan sistem persamaan linear, melakukan transformasi geometri, menganalisis data, dan banyak lagi. Dengan memahami struktur dan sifat-sifat matriks, kita dapat memanfaatkannya untuk memecahkan berbagai masalah secara efisien.</p>
+</section>
+<hr class="docutils" />
+<section id="jenis-jenis-matriks">
+<h2><strong>Jenis-jenis Matriks</strong><a class="headerlink" href="#jenis-jenis-matriks" title="Link to this heading">#</a></h2>
+<section id="matriks-nol">
+<h3><strong>1. Matriks Nol</strong><a class="headerlink" href="#matriks-nol" title="Link to this heading">#</a></h3>
+<p>Matriks yang seluruh elemennya adalah bilangan nol.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} A = \begin{pmatrix}
+   0 &amp; 0 &amp; 0\\
+   0 &amp; 0 &amp; 0
+   \end{pmatrix}  -&gt; Matriks Nol \end{split}\]</div>
+</section>
+<section id="matriks-baris">
+<h3><strong>2. Matriks Baris</strong><a class="headerlink" href="#matriks-baris" title="Link to this heading">#</a></h3>
+<p>Matriks yang hanya memiliki satu baris, berordo 1 x j.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} B = \begin{pmatrix}
+   1 &amp; 2 &amp; -1\\
+   \end{pmatrix}  -&gt; Matriks Baris \end{split}\]</div>
+</section>
+<section id="matriks-kolom">
+<h3><strong>3. Matriks Kolom</strong><a class="headerlink" href="#matriks-kolom" title="Link to this heading">#</a></h3>
+<p>Matriks yang hanya memiliki satu kolom, berordo i x 1.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} C = \begin{pmatrix}
+   2\\
+   3
+   \end{pmatrix}  -&gt; Matriks Kolom \end{split}\]</div>
+</section>
+<section id="matriks-persegi">
+<h3><strong>4. Matriks Persegi</strong><a class="headerlink" href="#matriks-persegi" title="Link to this heading">#</a></h3>
+<p>Matriks yang banyaknya baris sama dengan banyaknya kolom, berordo i x i.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} D = \begin{pmatrix}
+   1 &amp; 3 \\
+   -2 &amp; 5
+   \end{pmatrix}  -&gt; Matriks Persegi \end{split}\]</div>
+</section>
+<section id="matriks-diagonal">
+<h3><strong>5. Matriks Diagonal</strong><a class="headerlink" href="#matriks-diagonal" title="Link to this heading">#</a></h3>
+<p>Matriks persegi yang semua elemennya nol, kecuali pada diagonal utamanya.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} E = \begin{pmatrix}
+   2 &amp; 0 &amp; 0\\
+   0 &amp; 7 &amp; 0\\
+   0 &amp; 0 &amp; 3 \\
+   \end{pmatrix}  -&gt; Matriks Diagonal \end{split}\]</div>
+</section>
+<section id="matriks-segitiga-atas">
+<h3><strong>6. Matriks Segitiga Atas</strong><a class="headerlink" href="#matriks-segitiga-atas" title="Link to this heading">#</a></h3>
+<p>Matriks persegi yang semua elemen di bawah diagonal utamanya adalah nol.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} F = \begin{pmatrix}
+   4 &amp; 7 &amp; 8\\
+   0 &amp; 2 &amp; 1\\
+   0 &amp; 0 &amp; 3 \\
+   \end{pmatrix}  -&gt; Matriks Segitiga Atas \end{split}\]</div>
+</section>
+<section id="matriks-segitiga-bawah">
+<h3><strong>7. Matriks Segitiga Bawah</strong><a class="headerlink" href="#matriks-segitiga-bawah" title="Link to this heading">#</a></h3>
+<p>Matriks persegi yang semua elemen di atas diagonal utamanya adalah nol.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} G = \begin{pmatrix}
+   4 &amp; 0 &amp; 0\\
+   9 &amp; 2 &amp; 0\\
+   2 &amp; 4 &amp; 3 \\
+   \end{pmatrix}  -&gt; Matriks Segitiga Bawah \end{split}\]</div>
+</section>
+<section id="matriks-identitas">
+<h3><strong>8. Matriks Identitas</strong><a class="headerlink" href="#matriks-identitas" title="Link to this heading">#</a></h3>
+<p>Matriks persegi yang elemen pada diagonal utamanya adalah satu, sedangkan elemen lainnya adalah nol.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} I = \begin{pmatrix}
+   1 &amp; 0 &amp; 0\\
+   0 &amp; 1 &amp; 0\\
+   0 &amp; 0 &amp; 1 \\
+   \end{pmatrix}  -&gt; Matriks Identitas \end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="operasi-matriks">
+<h2><strong>Operasi Matriks</strong><a class="headerlink" href="#operasi-matriks" title="Link to this heading">#</a></h2>
+<p>Berikut beberapa operasi matriks:
+###1. <strong>Penjumlahan Matriks</strong>
+Dua matriks dapat dijumlahkan jika memiliki ordo yang sama.</p>
+<p>Contoh:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{pmatrix}
+   1 &amp; 2 \\
+   3 &amp; 4
+   \end{pmatrix}
+   +
+   \begin{pmatrix}
+   5 &amp; 6 \\
+   7 &amp; 8
+   \end{pmatrix}
+   =
+   \begin{pmatrix}
+   6 &amp; 8 \\
+   10 &amp; 12
+   \end{pmatrix} \end{split}\]</div>
+<p>###2. <strong>Perkalian Matriks</strong>
+Perkalian dua matriks ( A ) dan ( B ) dapat dilakukan jika jumlah kolom matriks ( A ) sama dengan jumlah baris matriks ( B ).</p>
+<p>Contoh:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{pmatrix}
+   1 &amp; 2 \\
+   3 &amp; 4
+   \end{pmatrix}
+   \times
+   \begin{pmatrix}
+   5 &amp; 6 \\
+   7 &amp; 8
+   \end{pmatrix}
+   =
+   \begin{pmatrix}
+   19 &amp; 22 \\
+   43 &amp; 50
+   \end{pmatrix} \end{split}\]</div>
+<p>###3. <strong>Transpose Matriks</strong>
+Transpose matriks ( A ) (ditulis ( A^T )) adalah matriks yang baris dan kolomnya dipertukarkan.</p>
+<p>Contoh:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} A = \begin{pmatrix}
+   1 &amp; 2 \\
+   3 &amp; 4
+   \end{pmatrix}, \quad
+   A^T = \begin{pmatrix}
+   1 &amp; 3 \\
+   2 &amp; 4
+   \end{pmatrix} \end{split}\]</div>
+<p>###4. <strong>Determinan</strong>
+Determinan adalah nilai skalar yang dapat dihitung dari matriks persegi.</p>
+<p>Contoh:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \text{det}(A) = \begin{vmatrix}
+   1 &amp; 2 \\
+   3 &amp; 4
+   \end{vmatrix}
+   = (1 \cdot 4) - (2 \cdot 3) = -2 \end{split}\]</div>
+<p>###5. <strong>Invers Matriks</strong>
+Invers matriks ( A ) (ditulis ( A^{-1} )) adalah matriks yang jika dikalikan dengan ( A ) menghasilkan matriks identitas.</p>
+<p>Contoh:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} A = \begin{pmatrix}
+   1 &amp; 2 \\
+   3 &amp; 4
+   \end{pmatrix}, \quad
+   A^{-1} = \begin{pmatrix}
+   -2 &amp; 1 \\
+   1.5 &amp; -0.5
+   \end{pmatrix} \end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="contoh-soal">
+<h2><strong>Contoh Soal</strong><a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Diberikan matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} A = \begin{pmatrix}
+   2 &amp; 3 \\
+   1 &amp; 4
+   \end{pmatrix}, \quad
+   B = \begin{pmatrix}
+   5 &amp; 6 \\
+   7 &amp; 8
+   \end{pmatrix} \end{split}\]</div>
+<p>Hitung ( A + B ) dan ( A x B ).</p>
+<p><strong>Jawaban:</strong>
+$<span class="math notranslate nohighlight">\( A + B = \begin{pmatrix}
+7 &amp; 9 \\
+8 &amp; 12
+\end{pmatrix}, \quad
+A \times B = \begin{pmatrix}
+31 &amp; 36 \\
+33 &amp; 38
+\end{pmatrix} \)</span>$</p>
+</li>
+<li><p>Tentukan determinan dari matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} C = \begin{pmatrix}
+   3 &amp; 1 \\
+   2 &amp; 4
+   \end{pmatrix} \end{split}\]</div>
+<p><strong>Jawaban:</strong>
+$<span class="math notranslate nohighlight">\( \text{det}(C) = (3 \cdot 4) - (1 \cdot 2) = 10 \)</span>$</p>
+</li>
 </ol>
-<section id="unsur-unsur-dalam-persamaan-linear">
-<h2><strong>Unsur-Unsur Dalam Persamaan Linear</strong><a class="headerlink" href="#unsur-unsur-dalam-persamaan-linear" title="Link to this heading">#</a></h2>
-<p>Dalam proses penyelesaiannya, persamaan linear akan menggunakan rumus-rumus tertentu. Dalam rumus persamaan linear tersebut akan memiliki beberapa unsur penting. Pada penjelasan sebelumnya beberapa unsur dalam penyelesaian persamaan linear sudah dijelaskan secara singkat.</p>
-<section id="variable">
-<h3>Variable<a class="headerlink" href="#variable" title="Link to this heading">#</a></h3>
-<p>Variabel dalam persamaan linear bisa diartikan sebagai penambah atau pengganti suatu bilangan yang pada dasarnya belum diketahui besaran nilai secara jelas. Variable sendiri kebanyak akan disimbolkan menggunakan huruf, misalnya seperti a, b, c, …, x, y, z.</p>
 </section>
-<section id="koefisien">
-<h3>Koefisien<a class="headerlink" href="#koefisien" title="Link to this heading">#</a></h3>
-<p>Koefisien adalah suatu bilangan yang dapat menjelaskan banyaknya jumlah variabel sejenis. Keberadaan koefisien sendiri akan berada di depan variable. Sebagai contohnya adalah pada soal 2 pensil dan 4 spidol dapat dituliskan dalam persamaan seperti: Pensil = x , spidol = y.</p>
-</section>
-<section id="konstanta">
-<h3>Konstanta<a class="headerlink" href="#konstanta" title="Link to this heading">#</a></h3>
-<p>Ada juga unsur konstanta dalam persamaan linear. Dimana konstanta adalah suatu nilai yang konstan yang tidak diikuti oleh variable pada bagian belakang. Sebagai contohnya adalah pada soal persamaan 2x + 5y + 7. Angka 7 pada soal persamaan tersebut adalah bentuk konstanta. Hal ini tak lain karena tidak ada variable apapun di bagian belakang angka 7.</p>
-</section>
-<section id="suku">
-<h3>Suku<a class="headerlink" href="#suku" title="Link to this heading">#</a></h3>
-<p>Suku adalah bagian dari bentuk persamaan. Suku akan terdiri beberapa unsur penting persamaan linear, mulai dari koefisien, variable dan juga konstanta. Sebagai contohnya pada soal persamaan 7x-y+4. Suku dari soal persamaan tersebut adalah 6x, -y, 4.</p>
-</section>
-</section>
-<section id="jenis-jenis-persamaan-linear">
-<h2><strong>Jenis-Jenis Persamaan Linear</strong><a class="headerlink" href="#jenis-jenis-persamaan-linear" title="Link to this heading">#</a></h2>
-<p>Persamaan linear dibagi menjadi beberapa jenis. Dimana ada tiga jenis persamaan linear, mulai dari persamaan linear satu variabel, persamaan linear dua variabel dan persamaan linear tiga variabel. Namun  jika ditulis dalam  matematik, persamaan linier secara umum adalah y = mx + b.</p>
-<section id="persamaan-linear-satu-variabel">
-<h3>Persamaan Linear Satu Variabel<a class="headerlink" href="#persamaan-linear-satu-variabel" title="Link to this heading">#</a></h3>
-<p>Persamaan linear satu variabel adalah salah satu jenis persamaan linear. Seperti dengan namanya, persamaan linear satu variabel tersebut akan memiliki satu variabel dengan pangkat 1 dalam bentuk kalimat terbuka dan dapat dihubungkan dengan tanda =.
-Secara umum bentuk persamaan linear satu variabel jika dituliskan secara matematik adalah seperti berikut ini.</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>ax + b = 0
-</pre></div>
-</div>
-<p>Keterangan:
-a = koefisien
-b = konstanta
-x = variable</p>
-</section>
-<section id="persamaan-linear-dua-variabel">
-<h3>Persamaan Linear Dua Variabel<a class="headerlink" href="#persamaan-linear-dua-variabel" title="Link to this heading">#</a></h3>
-<p>Selanjutnya, ada persamaan linear dua variabel yang juga menjadi salah satu jenis persamaan linear. Persamaan linear dua variabel ini adalah sistem persamaan yang memiliki variabel berjumlah dua dengan pangkat 1. Persamaan linear dua variabel tersebut akan menggunakan relasi = dan tidak akan menggunakan perkalian variabel pada setiap persamaan.
-Secara matematis, persamaan linear dua variabel bisa dituliskan seperti yang ada di bawah ini:</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>ax + by = c
-</pre></div>
-</div>
-</section>
-<section id="persamaan-linear-tiga-variabel">
-<h3>Persamaan Linear Tiga Variabel<a class="headerlink" href="#persamaan-linear-tiga-variabel" title="Link to this heading">#</a></h3>
-<p>Lalu masih ada persamaan persamaan linear tiga variabel yang juga merupakan jenis persamaan linear. Secara mudahnya persamaan linear tiga variabel ini adalah bentuk perluasan dari persamaan linier dua variabel.</p>
-<p>Dimana untuk menyelesaikan persamaan linear tiga variabel ini bisa dilakukan dengan dua cara yaitu menggunakan metode subtitusi dan metode eliminasi. Sistem persamaan linear tiga variabel ini akan menentukan titik potong.
-Secara umum penulisan persamaan linear tiga variabel adalah sebagai berikut.</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>ax + by + cy = d
-</pre></div>
-</div>
-</section>
-</section>
-<section id="metode-penyelesaian-persamaan-linear">
-<h2><strong>Metode Penyelesaian Persamaan Linear</strong><a class="headerlink" href="#metode-penyelesaian-persamaan-linear" title="Link to this heading">#</a></h2>
-<p>Pada bagian jenis persamaan linear ada beberapa metode yang bisa digunakan untuk menyelesaikan soal persamaan. Dimana metode-metode tersebut adalah seperti metode subtitusi dan metode persamaan.</p>
-<p>###Metode Substitusi</p>
-<p>Metode substitusi adalah salah satu cara untuk menyelesaikan soal mengenai persamaan linear dua variabel atau tiga variabel. Dimana nantinya ketika menggunakan metode substitusi ini akan mengubah suatu variabel dengan variabel dari persamaan lainnya.</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>2x + 4y = 28
-3x + 2y = 22
-</pre></div>
-</div>
-<section id="metode-eliminasi">
-<h3>Metode Eliminasi<a class="headerlink" href="#metode-eliminasi" title="Link to this heading">#</a></h3>
-<p>Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.</p>
-<div class="highlight-math notranslate"><div class="highlight"><pre><span></span>x + 2y = 20
-2x + 3y = 33
-</pre></div>
-</div>
-</section>
-</section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -528,14 +655,14 @@ Secara umum penulisan persamaan linear tiga variabel adalah sebagai berikut.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="markdown.html"
-       title="next page">
+    <a class="left-prev"
+       href="markdown-notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Sistem Persamaan Linear (SPL)</strong></p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Eliminasi Persamaan Linier</strong></p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -553,23 +680,20 @@ Secara umum penulisan persamaan linear tiga variabel adalah sebagai berikut.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsur-unsur-dalam-persamaan-linear"><strong>Unsur-Unsur Dalam Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable">Variable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#koefisien">Koefisien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konstanta">Konstanta</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suku">Suku</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengenalan-matriks"><strong>Pengenalan Matriks</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-matriks"><strong>Jenis-jenis Matriks</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol"><strong>1. Matriks Nol</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-baris"><strong>2. Matriks Baris</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-kolom"><strong>3. Matriks Kolom</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-persegi"><strong>4. Matriks Persegi</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-diagonal"><strong>5. Matriks Diagonal</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-segitiga-atas"><strong>6. Matriks Segitiga Atas</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-segitiga-bawah"><strong>7. Matriks Segitiga Bawah</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-identitas"><strong>8. Matriks Identitas</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear"><strong>Jenis-Jenis Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-satu-variabel">Persamaan Linear Satu Variabel</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-dua-variabel">Persamaan Linear Dua Variabel</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linear-tiga-variabel">Persamaan Linear Tiga Variabel</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-persamaan-linear"><strong>Metode Penyelesaian Persamaan Linear</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">Metode Eliminasi</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matriks"><strong>Operasi Matriks</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal"><strong>Contoh Soal</strong></a></li>
 </ul>
   </nav></div>
 
