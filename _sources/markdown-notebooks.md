@@ -119,6 +119,50 @@ x_1+x_2+x_3=3\\
 x_1=2x_2=3\\
 \end{array} $$
 
+$$ \begin{aligned}
+x_1 + x_2 + x_3 &= 3 \\
+2x_1 + 0x_2 + x_3 &= 5 \\
+x_1 - 2x_2 + 0x_3 &= 3
+\end{aligned} $$
+
+$$ Hasil Matriks:
+\begin{bmatrix}
+1 & 1 & 1 & | 3 \\
+2 & 0 & 1 & | 5 \\
+1 & -2 & 0 & | 3
+\end{bmatrix} $$
+
+Eliminasi dengan mengurangi baris kedua dengan 2 kali baris pertama:
+
+$$ \begin{bmatrix}
+1 & 1 & 1 & | 3 \\
+0 & -2 & -1 & | -1 \\
+1 & -2 & 0 & | 3
+\end{bmatrix} $$
+
+$$ \begin{bmatrix}
+1 & 1 & 1 & | 3 \\
+0 & -2 & -1 & | -1 \\
+0 & -3 & -1 & | 0
+\end{bmatrix} $$
+
+Eliminasi dengan mengubah baris ketiga:
+
+$$ B_3 = B_3 - \frac{3}{2} B_2 $$
+
+$$ \begin{bmatrix} 1 & 1 & 1 & | 3 \ 0 & -2 & -1 & | -1 \ 0 & 0 & \frac{1}{2} & | -\frac{3}{2} \end{bmatrix} ] $$
+
+Dari baris ketiga:
+
+$$ x_3 = -3. $$
+
+$$ -2x_2 -1(-3) = -1 \Rightarrow -2x_2 +3 = -1 \Rightarrow -2x_2 = -4 \Rightarrow x_2 = 2. $$
+
+$$ x_1 + 2 + (-3) = 3 \Rightarrow x_1 -1 = 3 \Rightarrow x_1 = 4. $$
+
+$$ (x_1, x_2, x_3) = (4, 2, -3). $$
+
+---
 **Contoh Nomor 3**
 selesaikan dengan menggunakna Eliminasi Gauss
 
