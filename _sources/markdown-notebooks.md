@@ -204,6 +204,7 @@ x_1+2x_3=6\\
 \end{array} $$
 
 bentuk matriks:
+
 $$ \begin{bmatrix}
    1 & 1 & 0 &|5 \\
    1 & 0 & 2 &|6
