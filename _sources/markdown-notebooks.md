@@ -151,8 +151,8 @@ Eliminasi dengan mengubah baris ketiga:
 $$ B_3 = B_3 - \frac{3}{2} B_2 $$
 
 $$ \begin{bmatrix} 
-1 & 1 & 1 & | 3 \
-0 & -2 & -1 & | -1 \
+1 & 1 & 1 & | 3 \\
+0 & -2 & -1 & | -1 \\
 0 & 0 & \frac{1}{2} & | -\frac{3}{2} 
 \end{bmatrix} ] $$
 
