@@ -100,7 +100,7 @@ $$ \begin{bmatrix}
 \end{bmatrix} $$
 
 Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
-Variabel bebas: , maka
+maka, 
 
 $$ x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10. $$
 
@@ -111,12 +111,12 @@ x_3 &= t, \quad t \in \mathbb{R}.
 \end{aligned} $$
 
 **Contoh Nomor 2**
-selesaikan dengan menggunakna Eliminasi Gauss
+selesaikan dengan menggunakan Eliminasi Gauss
 
 $$ \begin{array}{cc}
 x_1+x_2+x_3=3\\
 2x_1+x_3=5\\
-x_1=2x_2=3\\
+x_1+2x_2=3\\
 \end{array} $$
 
 $$ \begin{aligned}
@@ -150,7 +150,11 @@ Eliminasi dengan mengubah baris ketiga:
 
 $$ B_3 = B_3 - \frac{3}{2} B_2 $$
 
-$$ \begin{bmatrix} 1 & 1 & 1 & | 3 \ 0 & -2 & -1 & | -1 \ 0 & 0 & \frac{1}{2} & | -\frac{3}{2} \end{bmatrix} ] $$
+$$ \begin{bmatrix} 
+1 & 1 & 1 & | 3 \
+0 & -2 & -1 & | -1 \
+0 & 0 & \frac{1}{2} & | -\frac{3}{2} 
+\end{bmatrix} ] $$
 
 Dari baris ketiga:
 
@@ -164,7 +168,7 @@ $$ (x_1, x_2, x_3) = (4, 2, -3). $$
 
 ---
 **Contoh Nomor 3**
-selesaikan dengan menggunakna Eliminasi Gauss
+selesaikan dengan menggunakan Eliminasi Gauss
 
 $$ \begin{array}{cc}
 2x_1+2x_2=4\\
@@ -196,7 +200,7 @@ Jika , baris kedua menjadi , sehingga ada solusi tak hingga:
 $$ x_1 = 2 - x_2. $$
 
 **Contoh Nomor 4**
-selesaikan dengan menggunakna Eliminasi Gauss
+selesaikan dengan menggunakan Eliminasi Gauss
 
 $$ \begin{array}{cc}
 x_1+x_2=5\\
