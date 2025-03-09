@@ -76,14 +76,13 @@ selesaikan dengan menggunakan Eliminasi Gauss
 
 **Contoh Nomor 1**
 selesaikan dengan menggunakan Eliminasi Gauss
-$$
-\begin{array}{cc}
+
+
+$$\begin{array}{cc}
 x_1+2x_2+3x_3=6\\
 2x_1+4x_2+6x_3=12\\
 x_2+x_3=2
-\end{array}
-$$
- Matriks augmented:
+\end{array}$$
 
 \begin{bmatrix}
 1 & 2 & 3 & | 6 \\
