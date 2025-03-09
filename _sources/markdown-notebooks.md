@@ -84,7 +84,7 @@ x_1+2x_2+3x_3=6\\
 x_2+x_3=2
 \end{array}$$
 
-&& Matriks augmented: 
+&& Hasil Matriks: 
 \begin{bmatrix}
 1 & 2 & 3 & | 6 \\
 2 & 4 & 6 & | 12 \\
@@ -127,7 +127,7 @@ $$ \begin{array}{cc}
 x_1+x_2=2\\
 \end{array} $$
 
-$$ Matriks augmented:
+$$ Hasil Matriks:
 \begin{bmatrix}
 2 & 2 & | Y \\
 1 & 1 & | 2
@@ -149,7 +149,7 @@ $$ \begin{bmatrix}
 
 Jika , baris kedua menjadi , sehingga ada solusi tak hingga:
 
-x_1 = 2 - x_2.
+$$ x_1 = 2 - x_2. $$
 
 **Contoh Nomor 4**
 selesaikan dengan menggunakna Eliminasi Gauss
@@ -173,12 +173,14 @@ $$ \begin{bmatrix}
    \end{bmatrix} $$
 
 Elemen Pivot pada Baris Kedua Menjadi 1:
+
 $$ \begin{bmatrix}
    1 & 0 & 2  &|5\\
    0 & 1 & -2 &|-1
    \end{bmatrix} $$
 
 Elemen di Atas Pivot pada Baris Kedua:
+
 $$ \begin{bmatrix}
    1 & 0 & 2  &|6\\
    0 & 1 & -2 &|-1
