@@ -84,7 +84,8 @@ x_1+2x_2+3x_3=6\\
 x_2+x_3=2
 \end{array}$$
 
-&& \begin{bmatrix}
+&& Matriks augmented: 
+\begin{bmatrix}
 1 & 2 & 3 & | 6 \\
 2 & 4 & 6 & | 12 \\
 0 & -1 & 1 & | 2
@@ -111,43 +112,40 @@ x_3 &= t, \quad t \in \mathbb{R}.
 
 **Contoh Nomor 2**
 selesaikan dengan menggunakna Eliminasi Gauss
-$$
-\begin{array}{cc}
+
+$$ \begin{array}{cc}
 x_1+x_2+x_3=3\\
 2x_1+x_3=5\\
 x_1=2x_2=3\\
-\end{array}
-$$
+\end{array} $$
 
 **Contoh Nomor 3**
 selesaikan dengan menggunakna Eliminasi Gauss
-$$
-\begin{array}{cc}
+
+$$ \begin{array}{cc}
 2x_1+2x_2=4\\
 x_1+x_2=2\\
-\end{array}
-$$
+\end{array} $$
 
-Matriks augmented:
-
+$$ Matriks augmented:
 \begin{bmatrix}
 2 & 2 & | Y \\
 1 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix} $$
 
 Eliminasi dengan membagi baris pertama dengan 2:
 
-\begin{bmatrix}
+$$ \begin{bmatrix}
 1 & 1 & | \frac{Y}{2} \\
 1 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix} $$
 
 Kurangi baris kedua dengan baris pertama:
 
-\begin{bmatrix}
+$$ \begin{bmatrix}
 1 & 1 & | \frac{Y}{2} \\
 0 & 0 & | 2 - \frac{Y}{2}
-\end{bmatrix}
+\end{bmatrix} $$
 
 Jika , baris kedua menjadi , sehingga ada solusi tak hingga:
 
@@ -155,40 +153,40 @@ x_1 = 2 - x_2.
 
 **Contoh Nomor 4**
 selesaikan dengan menggunakna Eliminasi Gauss
-$$
-\begin{array}{cc}
+
+$$ \begin{array}{cc}
 x_1+x_2=5\\
 x_1+2x_3=6\\
-\end{array}
-$$
+\end{array} $$
+
 bentuk matriks:
-\begin{bmatrix}
+$$ \begin{bmatrix}
    1 & 1 & 0 &|5 \\
    1 & 0 & 2 &|6
-   \end{bmatrix}
+   \end{bmatrix} $$
 
 Operasi Baris Elementer:
-\begin{bmatrix}
+
+$$ \begin{bmatrix}
    1 & 1 & 0  &|5\\
    0 & -1 & 2 &|1
-   \end{bmatrix}
+   \end{bmatrix} $$
 
 Elemen Pivot pada Baris Kedua Menjadi 1:
-\begin{bmatrix}
+$$ \begin{bmatrix}
    1 & 0 & 2  &|5\\
    0 & 1 & -2 &|-1
-   \end{bmatrix}
+   \end{bmatrix} $$
 
 Elemen di Atas Pivot pada Baris Kedua:
-\begin{bmatrix}
+$$ \begin{bmatrix}
    1 & 0 & 2  &|6\\
    0 & 1 & -2 &|-1
-   \end{bmatrix}
+   \end{bmatrix} $$
 
 sistem persamaan:
-$$
-\begin{array}{cc}
+
+$$ \begin{array}{cc}
 x_1=6-2x_3\\
 x_2=-1+2x_3\\
-\end{array}
-$$
+\end{array} $$

@@ -489,7 +489,8 @@ x_1+2x_2+3x_3=6\\
 2x_1+4x_2+6x_3=12\\
 x_2+x_3=2
 \end{array}\end{split}\]</div>
-<p>&amp;&amp; \begin{bmatrix}
+<p>&amp;&amp; Matriks augmented:
+\begin{bmatrix}
 1 &amp; 2 &amp; 3 &amp; | 6 \
 2 &amp; 4 &amp; 6 &amp; | 12 \
 0 &amp; -1 &amp; 1 &amp; | 2
@@ -512,74 +513,74 @@ x_2 &amp;= t - 2, \\
 x_3 &amp;= t, \quad t \in \mathbb{R}.
 \end{aligned} \end{split}\]</div>
 <p><strong>Contoh Nomor 2</strong>
-selesaikan dengan menggunakna Eliminasi Gauss
-$<span class="math notranslate nohighlight">\(
-\begin{array}{cc}
+selesaikan dengan menggunakna Eliminasi Gauss</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{array}{cc}
 x_1+x_2+x_3=3\\
 2x_1+x_3=5\\
 x_1=2x_2=3\\
-\end{array}
-\)</span>$</p>
+\end{array} \end{split}\]</div>
 <p><strong>Contoh Nomor 3</strong>
-selesaikan dengan menggunakna Eliminasi Gauss
-$<span class="math notranslate nohighlight">\(
-\begin{array}{cc}
+selesaikan dengan menggunakna Eliminasi Gauss</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{array}{cc}
 2x_1+2x_2=4\\
 x_1+x_2=2\\
-\end{array}
-\)</span>$</p>
-<p>Matriks augmented:</p>
-<p>\begin{bmatrix}
-2 &amp; 2 &amp; | Y \
+\end{array} \end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} Matriks augmented:
+\begin{bmatrix}
+2 &amp; 2 &amp; | Y \\
 1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
+\end{bmatrix} \end{split}\]</div>
 <p>Eliminasi dengan membagi baris pertama dengan 2:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; | \frac{Y}{2} \
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{bmatrix}
+1 &amp; 1 &amp; | \frac{Y}{2} \\
 1 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
+\end{bmatrix} \end{split}\]</div>
 <p>Kurangi baris kedua dengan baris pertama:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; | \frac{Y}{2} \
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{bmatrix}
+1 &amp; 1 &amp; | \frac{Y}{2} \\
 0 &amp; 0 &amp; | 2 - \frac{Y}{2}
-\end{bmatrix}</p>
+\end{bmatrix} \end{split}\]</div>
 <p>Jika , baris kedua menjadi , sehingga ada solusi tak hingga:</p>
 <p>x_1 = 2 - x_2.</p>
 <p><strong>Contoh Nomor 4</strong>
-selesaikan dengan menggunakna Eliminasi Gauss
-$<span class="math notranslate nohighlight">\(
-\begin{array}{cc}
+selesaikan dengan menggunakna Eliminasi Gauss</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{array}{cc}
 x_1+x_2=5\\
 x_1+2x_3=6\\
-\end{array}
-\)</span>$
-bentuk matriks:
-\begin{bmatrix}
-1 &amp; 1 &amp; 0 &amp;|5 \
-1 &amp; 0 &amp; 2 &amp;|6
-\end{bmatrix}</p>
-<p>Operasi Baris Elementer:
-\begin{bmatrix}
-1 &amp; 1 &amp; 0  &amp;|5\
-0 &amp; -1 &amp; 2 &amp;|1
-\end{bmatrix}</p>
+\end{array} \end{split}\]</div>
+<p>bentuk matriks:
+$<span class="math notranslate nohighlight">\( \begin{bmatrix}
+   1 &amp; 1 &amp; 0 &amp;|5 \\
+   1 &amp; 0 &amp; 2 &amp;|6
+   \end{bmatrix} \)</span>$</p>
+<p>Operasi Baris Elementer:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{bmatrix}
+   1 &amp; 1 &amp; 0  &amp;|5\\
+   0 &amp; -1 &amp; 2 &amp;|1
+   \end{bmatrix} \end{split}\]</div>
 <p>Elemen Pivot pada Baris Kedua Menjadi 1:
-\begin{bmatrix}
-1 &amp; 0 &amp; 2  &amp;|5\
-0 &amp; 1 &amp; -2 &amp;|-1
-\end{bmatrix}</p>
+$<span class="math notranslate nohighlight">\( \begin{bmatrix}
+   1 &amp; 0 &amp; 2  &amp;|5\\
+   0 &amp; 1 &amp; -2 &amp;|-1
+   \end{bmatrix} \)</span>$</p>
 <p>Elemen di Atas Pivot pada Baris Kedua:
-\begin{bmatrix}
-1 &amp; 0 &amp; 2  &amp;|6\
-0 &amp; 1 &amp; -2 &amp;|-1
-\end{bmatrix}</p>
-<p>sistem persamaan:
-$<span class="math notranslate nohighlight">\(
-\begin{array}{cc}
+$<span class="math notranslate nohighlight">\( \begin{bmatrix}
+   1 &amp; 0 &amp; 2  &amp;|6\\
+   0 &amp; 1 &amp; -2 &amp;|-1
+   \end{bmatrix} \)</span>$</p>
+<p>sistem persamaan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{array}{cc}
 x_1=6-2x_3\\
 x_2=-1+2x_3\\
-\end{array}
-\)</span>$</p>
+\end{array} \end{split}\]</div>
 </section>
 </section>
 
