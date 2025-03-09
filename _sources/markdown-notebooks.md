@@ -84,7 +84,7 @@ x_1+2x_2+3x_3=6\\
 x_2+x_3=2
 \end{array}$$
 
-&& Hasil Matriks: 
+$$ Hasil Matriks: 
 \begin{bmatrix}
 1 & 2 & 3 & | 6 \\
 2 & 4 & 6 & | 12 \\
