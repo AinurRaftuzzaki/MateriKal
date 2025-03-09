@@ -84,30 +84,30 @@ x_1+2x_2+3x_3=6\\
 x_2+x_3=2
 \end{array}$$
 
-\begin{bmatrix}
+&& \begin{bmatrix}
 1 & 2 & 3 & | 6 \\
 2 & 4 & 6 & | 12 \\
 0 & -1 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix} $$
 
 Baris kedua dikurangi 2 kali baris pertama:
 
-\begin{bmatrix}
+$$ \begin{bmatrix}
 1 & 2 & 3 & | 6 \\
 0 & 0 & 0 & | 0 \\
 0 & -1 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix} $$
 
 Baris kedua menjadi nol, menunjukkan bahwa sistem memiliki solusi tak hingga.
 Variabel bebas: , maka
-$$
-x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10.
-$$
-\begin{aligned}
+
+$$ x_2 = t - 2, \quad x_1 = -2x_2 - 3x_3 + 6 = -2(t-2) - 3t + 6 = -5t + 10. $$
+
+$$ \begin{aligned}
 x_1 &= -5t + 10, \\
 x_2 &= t - 2, \\
 x_3 &= t, \quad t \in \mathbb{R}.
-\end{aligned}
+\end{aligned} $$
 
 **Contoh Nomor 2**
 selesaikan dengan menggunakna Eliminasi Gauss
