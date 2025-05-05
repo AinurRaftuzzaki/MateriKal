@@ -93,3 +93,47 @@ Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soa
   x + 2y = 20
   2x + 3y = 33
   ```
+  
+# Rotasi Bidang - Transformasi Linear
+
+## Soal
+
+*(Rotasi Bidang)*  
+Tunjukkan transformasi linear \( T: \mathbb{R}^2 \rightarrow \mathbb{R}^2 \) dinyatakan dengan matriks:
+
+\[
+A = \begin{bmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{bmatrix}
+\]
+
+Memiliki sifat rotasi dalam \( \mathbb{R}^2 \) berlawanan arah jarum jam dengan sudut \( \theta \).
+
+## Solusi
+
+Misalkan \( \vec{v} = (x, y) = (r \cos \alpha, r \sin \alpha) \) dengan:
+
+- \( r \): panjang vektor \( \vec{v} \)
+- \( \alpha \): sudut antara sumbu x dengan vektor \( \vec{v} \)
+
+Maka hasil rotasi oleh matriks A:
+
+\[
+A \cdot \vec{v} =
+\begin{bmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+r \cos \alpha \\
+r \sin \alpha
+\end{bmatrix}
+=
+\begin{bmatrix}
+r \cos(\alpha + \theta) \\
+r \sin(\alpha + \theta)
+\end{bmatrix}
+\]
+
+Artinya, vektor \( \vec{v} \) diputar sebesar \( \theta \) berlawanan arah jarum jam.
+
+---
